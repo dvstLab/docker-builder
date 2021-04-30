@@ -81,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - scan-arch
-      - scan-foal
+      - scan-focal
       - scan-lite
     steps:
     - name: Stage & Commit
