@@ -1,0 +1,5 @@
+general:
+  bestPracticeViolations:
+    - CIS-DI-0001
+    - CIS-DI-0005
+    - CIS-DI-0008

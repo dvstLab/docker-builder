@@ -1,0 +1,96 @@
+name: AIO Builder
+
+on:
+  schedule:
+    - cron: '0 1 7,14,21,28 1-12 ?'
+  push:
+    paths:
+    - '.github/workflows/schedule.yml'
+    - 'build.sh'
+    - 'dvst.sh'
+    branches:
+    - 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Docker Login
+      uses: docker/login-action@v1.9.0
+      with:
+          username: rzlamrr
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - name: Build & Push
+      run: bash build.sh
+
+  scan-arch:
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    steps:
+    - uses: Azure/container-scan@v0
+      id: scan-arch
+      continue-on-error: true
+      with:
+        image-name: rzlamrr/dvstlab:arch
+        run-quality-checks: true
+    - name: Move Result
+      run: |
+        mv "$PATH_SCAN" scan/arch.json
+      env:
+        PATH_SCAN: ${{ steps.scan-arch.outputs.scan-report-path }}
+
+  scan-focal:
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    steps:
+    - uses: actions/checkout@v2
+    - uses: Azure/container-scan@v0
+      id: scan-focal
+      continue-on-error: true
+      with:
+        image-name: rzlamrr/dvstlab:focal
+        run-quality-checks: true
+    - name: Move Result
+      run: |
+        mv "$PATH_SCAN" scan/focal.json
+      env:
+        PATH_SCAN: ${{ steps.scan-focal.outputs.scan-report-path }}
+
+  scan-lite:
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    steps:
+    - uses: actions/checkout@v2
+    - uses: Azure/container-scan@v0
+      id: scan-lite
+      continue-on-error: true
+      with:
+        image-name: rzlamrr/dvstlab:lite
+        run-quality-checks: true
+    - name: Move Result
+      run: |
+        mv "$PATH_SCAN" scan/lite.json
+      env:
+        PATH_SCAN: ${{ steps.scan-lite.outputs.scan-report-path }}
+
+  commit:
+    runs-on: ubuntu-latest
+    needs:
+      - scan-arch
+      - scan-foal
+      - scan-lite
+    steps:
+    - name: Stage & Commit
+      run: |
+        git config --local user.email "rzlamrr.dvst@protonmail.com"
+        git config --local user.name "rzlamrr"
+        git add scan/
+        git commit -m "ci: scan result"
+    - uses: ad-m/github-push-action@v0.6.0
+      with:
+        directory: "scan/"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
