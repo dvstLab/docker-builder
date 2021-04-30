@@ -20,17 +20,19 @@ jobs:
     needs:
       - build
     steps:
+    - uses: actions/checkout@v2
     - uses: Azure/container-scan@v0
       id: scan-arch
       continue-on-error: true
       with:
         image-name: rzlamrr/dvstlab:arch
         run-quality-checks: true
-    - name: Move Result
-      run: |
-        mv "$PATH_SCAN" scan/arch.json
-      env:
-        PATH_SCAN: ${{ steps.scan-arch.outputs.scan-report-path }}
+    - name: Upload Result
+      uses: actions/upload-artifact@v2
+      with:  
+        name: scan-arch
+        path: ${{ steps.scan-arch.outputs.scan-report-path }}
+        if-no-files-found: ignore
 
   scan-focal:
     runs-on: ubuntu-latest
@@ -44,11 +46,11 @@ jobs:
       with:
         image-name: rzlamrr/dvstlab:focal
         run-quality-checks: true
-    - name: Move Result
-      run: |
-        mv "$PATH_SCAN" scan/focal.json
-      env:
-        PATH_SCAN: ${{ steps.scan-focal.outputs.scan-report-path }}
+    - name: Upload Result
+      uses: actions/upload-artifact@v2
+      with:
+        name: scan-focal
+        path: ${{ steps.scan-focal.outputs.scan-report-path }}
 
   scan-lite:
     runs-on: ubuntu-latest
@@ -62,11 +64,12 @@ jobs:
       with:
         image-name: rzlamrr/dvstlab:lite
         run-quality-checks: true
-    - name: Move Result
-      run: |
-        mv "$PATH_SCAN" scan/lite.json
-      env:
-        PATH_SCAN: ${{ steps.scan-lite.outputs.scan-report-path }}
+    - name: Upload Result
+      uses: actions/upload-artifact@v2
+      with:
+        name: scan-lite
+        path: ${{ steps.scan-lite.outputs.scan-report-path }}
+        if-no-files-found: ignore
 
   commit:
     runs-on: ubuntu-latest
@@ -75,6 +78,19 @@ jobs:
       - scan-focal
       - scan-lite
     steps:
+    - uses: actions/checkout@v2
+    - uses: actions/download-artifact@v2
+      with:
+        name: scan-arch
+        path: scan/arch.json
+    - uses: actions/download-artifact@v2
+      with:
+        name: scan-focal
+        path: scan/focal.json
+    - uses: actions/download-artifact@v2
+      with:
+        name: scan-lite
+        path: scan/lite.json
     - name: Stage & Commit
       run: |
         git config --local user.email "rzlamrr.dvst@protonmail.com"
