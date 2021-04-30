@@ -1,0 +1,31 @@
+FROM archlinux:base-devel
+
+LABEL maintainer rzlamrr <rzlamrr.dvst@protonmail.com>
+
+ENV \
+	LANG=C.UTF-8 \
+	PATH=~/bin:/usr/local/bin:$PATH \
+	TZ=Asia/Jakarta
+
+RUN pacman -Sy --noconfirm && pacman -S --noconfirm \
+    bc binutils \
+    coreutils curl git gcc \
+    python openssh tar tzdata \
+    jq wget zip \
+    make pacman-contrib \
+    && paccache -r
+
+RUN curl -s https://api.github.com/repos/tcnksm/ghr/releases/latest \
+    | jq -r '.assets[] | select(.browser_download_url | contains("linux_amd64")) | .browser_download_url' | wget -qi - \
+  && tar -xzf ghr_*_amd64.tar.gz --wildcards 'ghr*/ghr' --strip-components 1 \
+  && mv ./ghr /usr/local/bin/ && rm -rf ghr_*_amd64.tar.gz \
+  && cp /usr/local/bin/ghr /usr/local/bin/gh \
+  && chmod a+x /usr/local/bin/ghr /usr/local/bin/gh
+
+RUN echo "Asia/Jakarta" > /etc/timezone
+
+COPY dvst.sh /etc/dvst.sh
+RUN chmod a+x /etc/dvst.sh \
+    && echo "source /etc/dvst.sh" >> /etc/bash.bashrc
+
+HEALTHCHECK CMD curl -f http://localhost/ || exit 1

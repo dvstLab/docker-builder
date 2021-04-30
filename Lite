@@ -1,0 +1,43 @@
+FROM ubuntu:20.04
+
+LABEL maintainer="rzlamrr <rzlamrr.dvst@protonmail.com>"
+
+ENV \
+	DEBIAN_FRONTEND=noninteractive \
+	LANG=C.UTF-8 \
+	PATH=~/bin:/usr/local/bin:$PATH \
+	TZ=Asia/Jakarta
+
+RUN apt-get update -qqy && apt-get install --no-install-recommends -y \
+    bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev \
+    libstdc++6 make openssl python ssh tzdata wget zip zstd \
+    && apt-get -y clean && apt-get -y autoremove \
+    && rm -rf /var/lib/apt/lists \
+    && rm -rf /var/cache/apt/archives
+
+RUN curl -s https://api.github.com/repos/tcnksm/ghr/releases/latest \
+    | jq -r '.assets[] | select(.browser_download_url | contains("linux_amd64")) | .browser_download_url' | wget -qi - \
+  && tar -xzf ghr_*_amd64.tar.gz --wildcards 'ghr*/ghr' --strip-components 1 \
+  && mv ./ghr /usr/local/bin/ && rm -rf ghr_*_amd64.tar.gz \
+  && cp /usr/local/bin/ghr /usr/local/bin/gh \
+  && chmod a+x /usr/local/bin/ghr /usr/local/bin/gh
+  
+# Change timzone
+RUN echo "Asia/Jakarta" > /etc/timezone
+
+RUN mkdir -p extra && cd extra \
+  && wget -q https://ftp.gnu.org/gnu/make/make-4.3.tar.gz \
+  && tar xzf make-4.3.tar.gz \
+  && cd make-*/ \
+  && ./configure && bash ./build.sh 1>/dev/null && install ./make /usr/local/bin/make \
+  && cd ../.. \
+  && rm -rf extra
+
+# Copy my custom script
+COPY dvst.sh /etc/dvst.sh
+RUN chmod a+x /etc/dvst.sh \
+    && echo "source /etc/dvst.sh" >> /etc/bash.bashrc
+COPY zipsigner-3.0.jar /etc/zipsigner-3.0.jar
+RUN chmod a+x /etc/zipsigner-3.0.jar
+
+HEALTHCHECK CMD curl -f http://localhost/ || exit 1
