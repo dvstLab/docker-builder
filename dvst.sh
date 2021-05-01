@@ -16,3 +16,9 @@ gitconf() {
     git config --global core.editor "nano"
     git config --global color.ui true
 }
+
+regen() {
+    rm -rf out mklog.txt
+    make O=out ARCH=arm64 "$@"
+    cp out/.config arch/arm64/configs/"$@"
+}
