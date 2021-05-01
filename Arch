@@ -10,7 +10,7 @@ ENV \
 RUN pacman -Sy --noconfirm && pacman -S --noconfirm \
     bc binutils \
     coreutils curl git gcc \
-    python openssh tar tzdata \
+    python python2 openssh tar tzdata \
     jq wget zip \
     make pacman-contrib \
     && paccache -r
