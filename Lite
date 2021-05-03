@@ -25,14 +25,6 @@ RUN curl -s https://api.github.com/repos/tcnksm/ghr/releases/latest \
 # Change timzone
 RUN echo "Asia/Jakarta" > /etc/timezone
 
-RUN mkdir -p extra && cd extra \
-  && wget -q https://ftp.gnu.org/gnu/make/make-4.3.tar.gz \
-  && tar xzf make-4.3.tar.gz \
-  && cd make-*/ \
-  && ./configure && bash ./build.sh 1>/dev/null && install ./make /usr/local/bin/make \
-  && cd ../.. \
-  && rm -rf extra
-
 # Copy my custom script
 COPY dvst.sh /etc/dvst.sh
 RUN chmod a+x /etc/dvst.sh \
