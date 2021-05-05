@@ -16,20 +16,21 @@ ENV \
 RUN apt-get update -qqy && apt-get install -y -q --no-install-recommends \
     apt-utils apt-transport-https python3-apt \
     lsb-core lsb-security ca-certificates systemd udev \
-    git curl wget wput axel rsync \
+    git curl wget wput axel \
     binutils coreutils bsdmainutils util-linux patchutils libc6-dev \
     ssh openssl libssl-dev sshpass gnupg2 gpg \
-    android-sdk-platform-tools adb fastboot squashfs-tools \
+    android-sdk-platform-tools squashfs-tools \
     openjdk-8-jdk ca-certificates-java \
     maven nodejs \
     python-all-dev python3-dev python3-requests \
-    zip unzip lzip lzop zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev \
+    zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev \
+    '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop \
     build-essential gcc gcc-multilib g++ g++-multilib \
-    clang llvm lld cmake automake autoconf \
+    clang lld cmake automake autoconf \
     libxml2 libxml2-utils xsltproc expat re2c \
     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 \
-    file gawk xterm screen rename tree schedtool software-properties-common \
-    dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick optipng advancecomp \
+    file gawk xterm rename tree schedtool software-properties-common \
+    dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp \
     python-is-python2 ninja-build libcrypt-dev \
     && apt-get -y clean && apt-get -y autoremove \
     && rm -rf /var/lib/apt/lists \
