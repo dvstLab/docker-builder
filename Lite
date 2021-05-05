@@ -10,7 +10,7 @@ ENV \
 
 RUN apt-get update -qqy && apt-get install --no-install-recommends -y \
     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev \
-    libstdc++6 make openssl python ssh tzdata wget zip zstd \
+    libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd \
     && apt-get -y clean && apt-get -y autoremove \
     && rm -rf /var/lib/apt/lists \
     && rm -rf /var/cache/apt/archives
