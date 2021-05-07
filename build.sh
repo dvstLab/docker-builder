@@ -43,26 +43,11 @@ push() {
     docker push ${DOCKER_IMAGE}:${1}
 }
 
-install_scanner() {
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-    echo \
-    "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-    sudo apt update
-    DEBIAN_FRONTEND=noninteractive sudo apt install -qqy docker-scan-plugin
-    DOCKER_SCAN_INSTALLED=yes
-    export DOCKER_SCAN_INSTALLED
-}
-
 test() {
+    docker scan --login --token ${SNYK_AUTH_TOKEN}
     docker scan --accept-license --json ${DOCKER_IMAGE}:${1} | tee scan/${1}.json
     docker scan --accept-license ${DOCKER_IMAGE}:${1} | tee scan/${1}.txt
 }
-
-## Install Docker Scan PLugin ##
-if [[ "${DOCKER_SCAN_INSTALLED}" != "yes" ]]; then
-    install_scanner
-fi
 
 if [[ -n "${1}" ]]; then
     if [[ "${1}" == "test" ]]; then
@@ -80,6 +65,6 @@ else
         setupvar "$i"
         builder
         push "$i"
-        test "$i"
+        #test "$i"
     done
 fi

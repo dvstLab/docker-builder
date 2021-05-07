@@ -28,7 +28,7 @@ Ubuntu Focal LTS Image Containing All Required Packages Installed For Building A
 Minimal Version of Focal Tag For Building Android Kernel
 
 <h2>Arch Tag</h2>
-<img alt="Docker Image Size (tag)" src="https://img.shields.io/docker/image-size/rzlamrr/dvstlab/arch?color=brightgreen&label=arch&style=for-the-badge">
+<img alt="Docker Image Size (tag)" src="https://img.shields.io/docker/image-size/rzlamrr/dvstlab/arch?color=green&label=arch&style=for-the-badge">
 <a href="https://github.com/dvstLab/docker-builder/actions/workflows/arch.yml">
 <img src="https://img.shields.io/github/workflow/status/dvstLab/docker-builder/Arch%20Builder?logo=githubactions&style=for-the-badge">
 </a>
@@ -39,12 +39,11 @@ Archlinux Image With Minimal Required Packages Installed For Building Android Ke
 
 <h2>Container Scan</h2>
 
-Use `Azure/container-scan` to help me checking the container and secure it.<br>
+We use <a href="https://docs.docker.com/engine/scan">docker-scan-plugin</a> with <a href="https://app.snyk.io">Snyk</a> to scan container image.<br>
 Then scan result will be uploaded to the <a href="https://github.com/dvstLab/docker/tree/main/scan">scan/</a> directory.
 
 <h2>Credits and Thanks</h2>
 <a href="https://github.com/rokibhasansagar/docker_droid-builder">rokibhasansagar/docker_droid-builder</a><br>
 <a href="https://github.com/fadlyas07">fadlyas07</a><br>
 <a href="https://github.com/ad-m/github-push-action">ad-m/github-push-action</a><br>
-<a href="https://github.com/Azure/container-scan">Azure/container-scan</a>
 </div>
