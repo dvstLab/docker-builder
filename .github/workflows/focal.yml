@@ -29,5 +29,9 @@ jobs:
       - build
     steps:
     - uses: actions/checkout@v2
-    - name: Test
+    - uses: docker/login-action@v1.9.0
+      with:
+        username: rzlamrr
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - name: Scan Focal
       run: bash build.sh test focal

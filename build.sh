@@ -6,6 +6,8 @@ DOCKER_IMAGE="rzlamrr/dvstlab"
 
 BUILD_DATE="$(date -u +"%Y%m%d")"
 
+TAG=("focal" "lite" "arch")
+
 setupvar() {
     IMAGE_TAG="${1}"
 
@@ -42,12 +44,9 @@ push() {
 }
 
 test() {
-    docker pull ${DOCKER_IMAGE}:${1}
-    docker run --rm -i --name docker_${1} --hostname ${1} -c 64 -m 256m \
-        ${DOCKER_IMAGE}:${1} bash -c 'cat /etc/os-release'
+    docker scan --accept-license --json ${DOCKER_IMAGE}:${1} | tee scan/${1}.json
+    docker scan --accept-license ${DOCKER_IMAGE}:${1} | tee scan/${1}.txt
 }
-
-TAG=("focal" "lite" "arch")
 
 if [[ -n "${1}" ]]; then
     if [[ "${1}" == "test" ]]; then
