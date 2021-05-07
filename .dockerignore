@@ -1,6 +1,6 @@
+*.md
 .git
 .github
+build.sh
 LICENSE
-Makefile
-*.md
 scan/
