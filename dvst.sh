@@ -17,6 +17,7 @@ gitconf() {
     git config --global color.ui true
 }
 
+# shellcheck disable=SC2145
 regen() {
     rm -rf out mklog.txt
     make O=out ARCH=arm64 "$@"

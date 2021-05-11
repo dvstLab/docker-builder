@@ -6,6 +6,9 @@ DOCKER_IMAGE="rzlamrr/dvstlab"
 
 BUILD_DATE="$(date -u +"%Y%m%d")"
 
+# latest tag  reference(focal/lite/arch)
+LATEST="focal"
+
 TAG=("focal" "lite" "arch")
 
 setupvar() {
@@ -35,36 +38,49 @@ setupvar() {
 	--tag ${DOCKER_IMAGE}:${IMAGE_TAG}"
 }
 
+# shellcheck disable=SC2086
 builder() {
     docker build . ${FLAGS} ${LABELS}
 }
 
+# shellcheck disable=SC2086
 push() {
     docker push ${DOCKER_IMAGE}:${1}
 }
 
+push_latest() {
+    docker tag ${DOCKER_IMAGE}:${LATEST} ${DOCKER_IMAGE}:latest
+    docker push ${DOCKER_IMAGE}:latest
+}
+
+# shellcheck disable=SC2086
 test() {
     docker scan --login --token ${SNYK_AUTH_TOKEN}
     docker scan --accept-license --json ${DOCKER_IMAGE}:${1} | tee scan/${1}.json
     docker scan --accept-license ${DOCKER_IMAGE}:${1} | tee scan/${1}.txt
 }
 
-if [[ -n "${1}" ]]; then
-    if [[ "${1}" == "test" ]]; then
-        test "${2}"
-    elif [[ "${TAG[*]}" =~ "${1}" ]]; then
-        setupvar "${1}"
-        builder
-        push "${1}"
+# shellcheck disable=SC2076
+task() {
+    if [[ -n "${1}" ]]; then
+        if [[ "${1}" == "test" ]]; then
+            test "${2}"
+        elif [[ "${TAG[*]}" =~ "${1}" ]]; then
+            setupvar "${1}"
+            builder
+            push "${1}"
+        else
+            echo "Invalid argument!"
+            exit 1
+        fi
     else
-        echo "Invalid argument!"
-        exit 1
+        for i in "${TAG[@]}"; do
+            setupvar "$i"
+            builder
+            push "$i"
+            # test "$i"
+        done
     fi
-else
-    for i in "${TAG[@]}"; do
-        setupvar "$i"
-        builder
-        push "$i"
-        #test "$i"
-    done
-fi
+}
+
+if task "$@"; then push_latest; fi
