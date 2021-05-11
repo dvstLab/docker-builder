@@ -61,26 +61,23 @@ test() {
 }
 
 # shellcheck disable=SC2076
-task() {
-    if [[ -n "${1}" ]]; then
-        if [[ "${1}" == "test" ]]; then
-            test "${2}"
-        elif [[ "${TAG[*]}" =~ "${1}" ]]; then
-            setupvar "${1}"
-            builder
-            push "${1}"
-        else
-            echo "Invalid argument!"
-            exit 1
-        fi
+if [[ -n "${1}" ]]; then
+    if [[ "${1}" == "test" ]]; then
+        test "${2}"
+    elif [[ "${TAG[*]}" =~ "${1}" ]]; then
+        setupvar "${1}"
+        builder
+        push "${1}"
     else
-        for i in "${TAG[@]}"; do
-            setupvar "$i"
-            builder
-            push "$i"
-            # test "$i"
-        done
+        echo "Invalid argument!"
+        exit 1
     fi
-}
-
-if task "$@"; then push_latest; fi
+else
+    for i in "${TAG[@]}"; do
+        setupvar "$i"
+        builder
+        push "$i"
+        # test "$i"
+    done
+    push_latest
+fi
