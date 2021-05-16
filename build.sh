@@ -56,7 +56,6 @@ push_latest() {
 # shellcheck disable=SC2086
 test() {
     docker scan --login --token ${SNYK_AUTH_TOKEN}
-    docker scan --accept-license --json ${DOCKER_IMAGE}:${1} | tee scan/${1}.json
     docker scan --accept-license ${DOCKER_IMAGE}:${1} | tee scan/${1}.txt
 }
 

@@ -1,5 +1,0 @@
-{
-  "ok": false,
-  "error": "You have reached the scan limit of 10 monthly scans without authentication.   \nFor additional monthly scans, sign into or sign up for Snyk for free with the following command:\n`docker scan --login`",
-  "path": "rzlamrr/dvstlab:focal"
-}
