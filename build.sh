@@ -52,15 +52,17 @@ push_latest() {
 }
 
 # shellcheck disable=SC2086
-test() {
-    docker scan --login --token ${SNYK_AUTH_TOKEN}
-    docker scan --accept-license ${DOCKER_IMAGE}:${1} | tee scan/${1}.txt
+scan() {
+    echo "y" | docker scan --login --token ${SNYK_AUTH_TOKEN}
+    docker scan --accept-license rzlamrr/dvstlab:focal | tee scan/focal.txt
+    docker scan --accept-license rzlamrr/dvstlab:lite | tee scan/lite.txt
+    docker scan --accept-license rzlamrr/dvstlab:arch | tee scan/arch.txt
 }
 
 # shellcheck disable=SC2076
 if [[ -n "${1}" ]]; then
-    if [[ "${1}" == "test" ]]; then
-        test "${2}"
+    if [[ "${1}" == "scan" ]]; then
+        scan
     elif [[ "${TAG[*]}" =~ "${1}" ]]; then
         setupvar "${1}"
         builder
@@ -74,7 +76,6 @@ else
         setupvar "$i"
         builder
         push "$i"
-        # test "$i"
     done
     push_latest
 fi

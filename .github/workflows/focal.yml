@@ -22,25 +22,3 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build & Push Focal
       run: bash build.sh focal
-
-  test:
-    runs-on: ubuntu-latest
-    needs:
-      - build
-    steps:
-    - uses: actions/checkout@v2.3.4
-    - uses: docker/login-action@v1.9.0
-      with:
-        username: rzlamrr
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
-    - name: Scan Focal
-      run: |
-        curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-        echo \
-        "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-        $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-        sudo apt update
-        DEBIAN_FRONTEND=noninteractive sudo apt install -qqy docker-scan-plugin
-        bash build.sh test focal
-      env:
-        SNYK_AUTH_TOKEN: ${{ secrets.SNYK_TOKEN }}

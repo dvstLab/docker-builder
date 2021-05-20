@@ -41,9 +41,7 @@ jobs:
         $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
         sudo apt update
         DEBIAN_FRONTEND=noninteractive sudo apt install -qqy docker-scan-plugin
-        bash build.sh test focal
-        bash build.sh test lite
-        bash build.sh test arch
+        bash build.sh scan
       env:
         SNYK_AUTH_TOKEN: ${{ secrets.SNYK_TOKEN }}
     - name: Stage & Commit
