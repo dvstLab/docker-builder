@@ -33,9 +33,7 @@ setupvar() {
 	--label org.label-schema.version=1.2
 	--label org.label-schema.schema-version=1.0"
 
-    FLAGS="--rm --force-rm --compress --no-cache=true --pull
-	--file ${DOCKERFILE}
-	--tag ${DOCKER_IMAGE}:${IMAGE_TAG}"
+    FLAGS="--rm --compress --pull --file ${DOCKERFILE} --tag ${DOCKER_IMAGE}:${IMAGE_TAG}"
 }
 
 # shellcheck disable=SC2086
