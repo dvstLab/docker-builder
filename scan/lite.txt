@@ -189,6 +189,15 @@ Testing rzlamrr/dvstlab:lite...
   From: git@1:2.25.1-1ubuntu3.1
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
+✗ Low severity vulnerability found in curl/libcurl4
+  Description: CVE-2021-22898
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-CURL-1296912
+  Introduced through: curl@7.68.0-1ubuntu2.5, git@1:2.25.1-1ubuntu3.1
+  From: curl@7.68.0-1ubuntu2.5 > curl/libcurl4@7.68.0-1ubuntu2.5
+  From: curl@7.68.0-1ubuntu2.5
+  From: git@1:2.25.1-1ubuntu3.1 > curl/libcurl3-gnutls@7.68.0-1ubuntu2.5
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+
 ✗ Low severity vulnerability found in coreutils
   Description: Improper Input Validation
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-COREUTILS-583876
@@ -253,7 +262,7 @@ Testing rzlamrr/dvstlab:lite...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
 ✗ Medium severity vulnerability found in systemd/libsystemd0
-  Description: CVE-2020-13529
+  Description: Authentication Bypass
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SYSTEMD-1290722
   Introduced through: systemd/libsystemd0@245.4-4ubuntu3.6, apt@2.0.5, procps/libprocps8@2:3.3.16-1ubuntu2.1, util-linux/bsdutils@1:2.34-0.1ubuntu9.1, openssh/ssh@1:8.2p1-4ubuntu0.2, util-linux/mount@2.34-0.1ubuntu9.1, systemd/libudev1@245.4-4ubuntu3.6
   From: systemd/libsystemd0@245.4-4ubuntu3.6
@@ -288,6 +297,16 @@ Testing rzlamrr/dvstlab:lite...
   From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2
   and 12 more...
 
+✗ Medium severity vulnerability found in lz4/liblz4-1
+  Description: CVE-2021-3520
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LZ4-1278678
+  Introduced through: lz4/liblz4-1@1.9.2-2, libzstd/zstd@1.4.4+dfsg-3ubuntu0.1, apt@2.0.5
+  From: lz4/liblz4-1@1.9.2-2
+  From: libzstd/zstd@1.4.4+dfsg-3ubuntu0.1 > lz4/liblz4-1@1.9.2-2
+  From: apt@2.0.5 > apt/libapt-pkg6.0@2.0.5 > lz4/liblz4-1@1.9.2-2
+  and 1 more...
+  Fixed in: 1.9.2-2ubuntu0.20.04.1
+
 ✗ Medium severity vulnerability found in gcc-defaults/cpp
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GCCDEFAULTS-584255
@@ -313,5 +332,5 @@ Docker image:      rzlamrr/dvstlab:lite
 Platform:          linux/amd64
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 36 issues.
+Tested 221 dependencies for known issues, found 38 issues.
 
