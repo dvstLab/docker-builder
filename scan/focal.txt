@@ -95,18 +95,18 @@ Testing rzlamrr/dvstlab:focal...
   Description: HTTP Request Smuggling
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PYTHON38-1075582
   Introduced through: lsb/lsb-core@11.1.0ubuntu2, python3-defaults/python3-dev@3.8.2-0ubuntu2
-  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.2 > python3.8/python3.8-minimal@3.8.5-1~20.04.2 > python3.8/libpython3.8-minimal@3.8.5-1~20.04.2
-  From: lsb/lsb-core@11.1.0ubuntu2 > mailutils@1:3.7-2.1 > mailutils/libmailutils6@1:3.7-2.1 > python3.8/libpython3.8@3.8.5-1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2 > python3.8/libpython3.8-minimal@3.8.5-1~20.04.2
-  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2
+  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.3 > python3.8/python3.8-minimal@3.8.5-1~20.04.3 > python3.8/libpython3.8-minimal@3.8.5-1~20.04.3
+  From: lsb/lsb-core@11.1.0ubuntu2 > mailutils@1:3.7-2.1 > mailutils/libmailutils6@1:3.7-2.1 > python3.8/libpython3.8@3.8.5-1~20.04.3 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.3 > python3.8/libpython3.8-minimal@3.8.5-1~20.04.3
+  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.3
   and 14 more...
 
 ✗ Low severity vulnerability found in policykit-1/libpolkit-gobject-1-0
   Description: Improper Encoding or Escaping of Output
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-POLICYKIT1-582575
   Introduced through: software-properties/software-properties-common@0.98.9.5
-  From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1
-  From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1
-  From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1 > policykit-1/libpolkit-agent-1-0@0.105-26ubuntu1 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1
+  From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1.1
+  From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1.1
+  From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > policykit-1/libpolkit-agent-1-0@0.105-26ubuntu1.1 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1.1
   and 2 more...
 
 ✗ Low severity vulnerability found in pcre3/libpcre16-3
@@ -208,9 +208,15 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: meta-common-packages@meta
   From: meta-common-packages@meta > libtasn1-6@4.16.0-2
 
+✗ Low severity vulnerability found in libjpeg-turbo/libjpeg-turbo8
+  Description: CVE-2020-17541
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBJPEGTURBO-1299079
+  Introduced through: android-sdk-meta/android-sdk-platform-tools@27.0.0+12
+  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2 > libjpeg8-empty/libjpeg8@8c-2ubuntu8 > libjpeg-turbo/libjpeg-turbo8@2.0.3-0ubuntu1.20.04.1
+
 ✗ Low severity vulnerability found in libgcrypt20
-  Description: Cryptographic Issues
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGCRYPT20-576861
+  Description: CVE-2021-33560
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGCRYPT20-1297919
   Introduced through: meta-common-packages@meta
   From: meta-common-packages@meta > libgcrypt20@1.8.5-5ubuntu1
 
@@ -569,17 +575,58 @@ Testing rzlamrr/dvstlab:focal...
   From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > sqlite3@3.31.1-4ubuntu0.2
   From: meta-common-packages@meta > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
 
-✗ Medium severity vulnerability found in python3.8/libpython3.8-minimal
-  Description: Improper Input Validation
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PYTHON38-1290411
-  Introduced through: lsb/lsb-core@11.1.0ubuntu2, python3-defaults/python3-dev@3.8.2-0ubuntu2
-  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.2 > python3.8/python3.8-minimal@3.8.5-1~20.04.2 > python3.8/libpython3.8-minimal@3.8.5-1~20.04.2
-  From: lsb/lsb-core@11.1.0ubuntu2 > mailutils@1:3.7-2.1 > mailutils/libmailutils6@1:3.7-2.1 > python3.8/libpython3.8@3.8.5-1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2 > python3.8/libpython3.8-minimal@3.8.5-1~20.04.2
-  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2
-  and 14 more...
+✗ Medium severity vulnerability found in libxml2
+  Description: Use After Free
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1278686
+  Introduced through: libxml2@2.9.10+dfsg-5, libxml2/libxml2-utils@2.9.10+dfsg-5, libxslt/xsltproc@1.1.34-4, cmake@3.16.3-1ubuntu1, imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.2, software-properties/software-properties-common@0.98.9.5, lsb/lsb-core@11.1.0ubuntu2, openjdk-8/openjdk-8-jdk@8u292-b10-0ubuntu1~20.04
+  From: libxml2@2.9.10+dfsg-5
+  From: libxml2/libxml2-utils@2.9.10+dfsg-5 > libxml2@2.9.10+dfsg-5
+  From: libxslt/xsltproc@1.1.34-4 > libxml2@2.9.10+dfsg-5
+  and 10 more...
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
+
+✗ Medium severity vulnerability found in libxml2
+  Description: Out-of-bounds Write
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1278690
+  Introduced through: libxml2@2.9.10+dfsg-5, libxml2/libxml2-utils@2.9.10+dfsg-5, libxslt/xsltproc@1.1.34-4, cmake@3.16.3-1ubuntu1, imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.2, software-properties/software-properties-common@0.98.9.5, lsb/lsb-core@11.1.0ubuntu2, openjdk-8/openjdk-8-jdk@8u292-b10-0ubuntu1~20.04
+  From: libxml2@2.9.10+dfsg-5
+  From: libxml2/libxml2-utils@2.9.10+dfsg-5 > libxml2@2.9.10+dfsg-5
+  From: libxslt/xsltproc@1.1.34-4 > libxml2@2.9.10+dfsg-5
+  and 10 more...
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
+
+✗ Medium severity vulnerability found in libxml2
+  Description: CVE-2021-3516
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1278694
+  Introduced through: libxml2@2.9.10+dfsg-5, libxml2/libxml2-utils@2.9.10+dfsg-5, libxslt/xsltproc@1.1.34-4, cmake@3.16.3-1ubuntu1, imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.2, software-properties/software-properties-common@0.98.9.5, lsb/lsb-core@11.1.0ubuntu2, openjdk-8/openjdk-8-jdk@8u292-b10-0ubuntu1~20.04
+  From: libxml2@2.9.10+dfsg-5
+  From: libxml2/libxml2-utils@2.9.10+dfsg-5 > libxml2@2.9.10+dfsg-5
+  From: libxslt/xsltproc@1.1.34-4 > libxml2@2.9.10+dfsg-5
+  and 10 more...
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
+
+✗ Medium severity vulnerability found in libxml2
+  Description: NULL Pointer Dereference
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1290394
+  Introduced through: libxml2@2.9.10+dfsg-5, libxml2/libxml2-utils@2.9.10+dfsg-5, libxslt/xsltproc@1.1.34-4, cmake@3.16.3-1ubuntu1, imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.2, software-properties/software-properties-common@0.98.9.5, lsb/lsb-core@11.1.0ubuntu2, openjdk-8/openjdk-8-jdk@8u292-b10-0ubuntu1~20.04
+  From: libxml2@2.9.10+dfsg-5
+  From: libxml2/libxml2-utils@2.9.10+dfsg-5 > libxml2@2.9.10+dfsg-5
+  From: libxslt/xsltproc@1.1.34-4 > libxml2@2.9.10+dfsg-5
+  and 10 more...
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
+
+✗ Medium severity vulnerability found in libxml2
+  Description: CVE-2021-3541
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1295536
+  Introduced through: libxml2@2.9.10+dfsg-5, libxml2/libxml2-utils@2.9.10+dfsg-5, libxslt/xsltproc@1.1.34-4, cmake@3.16.3-1ubuntu1, imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.2, software-properties/software-properties-common@0.98.9.5, lsb/lsb-core@11.1.0ubuntu2, openjdk-8/openjdk-8-jdk@8u292-b10-0ubuntu1~20.04
+  From: libxml2@2.9.10+dfsg-5
+  From: libxml2/libxml2-utils@2.9.10+dfsg-5 > libxml2@2.9.10+dfsg-5
+  From: libxslt/xsltproc@1.1.34-4 > libxml2@2.9.10+dfsg-5
+  and 10 more...
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
 ✗ Medium severity vulnerability found in libcaca/libcaca0
-  Description: CVE-2021-30499
+  Description: Out-of-Bounds
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBCACA-1245155
   Introduced through: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libcaca/libcaca-dev@0.99.beta19-2.1ubuntu1.20.04.1 > libcaca/libcaca0@0.99.beta19-2.1ubuntu1.20.04.1
@@ -587,7 +634,7 @@ Testing rzlamrr/dvstlab:focal...
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libcaca/libcaca-dev@0.99.beta19-2.1ubuntu1.20.04.1
 
 ✗ Medium severity vulnerability found in libcaca/libcaca0
-  Description: CVE-2021-30498
+  Description: Out-of-Bounds
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBCACA-1245158
   Introduced through: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libcaca/libcaca-dev@0.99.beta19-2.1ubuntu1.20.04.1 > libcaca/libcaca0@0.99.beta19-2.1ubuntu1.20.04.1
@@ -702,5 +749,5 @@ Docker image:      rzlamrr/dvstlab:focal
 Platform:          linux/amd64
 Licenses:          enabled
 
-Tested 738 dependencies for known issues, found 80 issues.
+Tested 738 dependencies for known issues, found 85 issues.
 

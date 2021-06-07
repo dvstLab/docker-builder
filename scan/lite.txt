@@ -6,7 +6,7 @@ Testing rzlamrr/dvstlab:lite...
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-1070680
   Introduced through: python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2, curl@7.68.0-1ubuntu2.5
   From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
-  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.3 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.3 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: curl@7.68.0-1ubuntu2.5 > curl/libcurl4@7.68.0-1ubuntu2.5 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
@@ -15,7 +15,7 @@ Testing rzlamrr/dvstlab:lite...
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-1070691
   Introduced through: python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2, curl@7.68.0-1ubuntu2.5
   From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
-  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.3 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.3 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: curl@7.68.0-1ubuntu2.5 > curl/libcurl4@7.68.0-1ubuntu2.5 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
@@ -32,9 +32,9 @@ Testing rzlamrr/dvstlab:lite...
   Description: HTTP Request Smuggling
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PYTHON38-1075582
   Introduced through: python3-defaults/python3-dev@3.8.2-0ubuntu2
-  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/libpython3-dev@3.8.2-0ubuntu2 > python3.8/libpython3.8-dev@3.8.5-1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2
-  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2
-  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/libpython3-dev@3.8.2-0ubuntu2 > python3.8/libpython3.8-dev@3.8.5-1~20.04.3 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.3
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.3
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.3 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.3
   and 12 more...
 
 ✗ Low severity vulnerability found in pcre3/libpcre3
@@ -82,8 +82,8 @@ Testing rzlamrr/dvstlab:lite...
   From: apt@2.0.5 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3 > libtasn1-6@4.16.0-2
 
 ✗ Low severity vulnerability found in libgcrypt20
-  Description: Cryptographic Issues
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGCRYPT20-576861
+  Description: CVE-2021-33560
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGCRYPT20-1297919
   Introduced through: libgcrypt20@1.8.5-5ubuntu1, apt@2.0.5
   From: libgcrypt20@1.8.5-5ubuntu1
   From: apt@2.0.5 > apt/libapt-pkg6.0@2.0.5 > libgcrypt20@1.8.5-5ubuntu1
@@ -284,18 +284,9 @@ Testing rzlamrr/dvstlab:lite...
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-581593
   Introduced through: python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2, curl@7.68.0-1ubuntu2.5
   From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
-  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.3 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.3 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: curl@7.68.0-1ubuntu2.5 > curl/libcurl4@7.68.0-1ubuntu2.5 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
-
-✗ Medium severity vulnerability found in python3.8/libpython3.8-stdlib
-  Description: Improper Input Validation
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PYTHON38-1290411
-  Introduced through: python3-defaults/python3-dev@3.8.2-0ubuntu2
-  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/libpython3-dev@3.8.2-0ubuntu2 > python3.8/libpython3.8-dev@3.8.5-1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2
-  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2
-  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.5-1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.5-1~20.04.2
-  and 12 more...
 
 ✗ Medium severity vulnerability found in lz4/liblz4-1
   Description: CVE-2021-3520
@@ -306,6 +297,41 @@ Testing rzlamrr/dvstlab:lite...
   From: apt@2.0.5 > apt/libapt-pkg6.0@2.0.5 > lz4/liblz4-1@1.9.2-2
   and 1 more...
   Fixed in: 1.9.2-2ubuntu0.20.04.1
+
+✗ Medium severity vulnerability found in libxml2
+  Description: Use After Free
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1278686
+  Introduced through: libxml2@2.9.10+dfsg-5
+  From: libxml2@2.9.10+dfsg-5
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+
+✗ Medium severity vulnerability found in libxml2
+  Description: Out-of-bounds Write
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1278690
+  Introduced through: libxml2@2.9.10+dfsg-5
+  From: libxml2@2.9.10+dfsg-5
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+
+✗ Medium severity vulnerability found in libxml2
+  Description: CVE-2021-3516
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1278694
+  Introduced through: libxml2@2.9.10+dfsg-5
+  From: libxml2@2.9.10+dfsg-5
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+
+✗ Medium severity vulnerability found in libxml2
+  Description: NULL Pointer Dereference
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1290394
+  Introduced through: libxml2@2.9.10+dfsg-5
+  From: libxml2@2.9.10+dfsg-5
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+
+✗ Medium severity vulnerability found in libxml2
+  Description: CVE-2021-3541
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1295536
+  Introduced through: libxml2@2.9.10+dfsg-5
+  From: libxml2@2.9.10+dfsg-5
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
 ✗ Medium severity vulnerability found in gcc-defaults/cpp
   Description: Information Exposure
@@ -332,5 +358,5 @@ Docker image:      rzlamrr/dvstlab:lite
 Platform:          linux/amd64
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 38 issues.
+Tested 221 dependencies for known issues, found 42 issues.
 
