@@ -67,13 +67,6 @@ Testing rzlamrr/dvstlab:lite...
   From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-server@1:8.2p1-4ubuntu0.2 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.2 > openssh/openssh-client@1:8.2p1-4ubuntu0.2
   and 3 more...
 
-✗ Low severity vulnerability found in libxml2
-  Description: Out-of-bounds Read
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-609730
-  Introduced through: libxml2@2.9.10+dfsg-5
-  From: libxml2@2.9.10+dfsg-5
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
-
 ✗ Low severity vulnerability found in libtasn1-6
   Description: Resource Management Errors
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBTASN16-578037
@@ -82,7 +75,7 @@ Testing rzlamrr/dvstlab:lite...
   From: apt@2.0.5 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3 > libtasn1-6@4.16.0-2
 
 ✗ Low severity vulnerability found in libgcrypt20
-  Description: CVE-2021-33560
+  Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGCRYPT20-1297919
   Introduced through: libgcrypt20@1.8.5-5ubuntu1, apt@2.0.5
   From: libgcrypt20@1.8.5-5ubuntu1
@@ -270,15 +263,6 @@ Testing rzlamrr/dvstlab:lite...
   From: procps/libprocps8@2:3.3.16-1ubuntu2.1 > systemd/libsystemd0@245.4-4ubuntu3.6
   and 8 more...
 
-✗ Medium severity vulnerability found in systemd/libsystemd0
-  Description: Information Exposure
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SYSTEMD-582552
-  Introduced through: systemd/libsystemd0@245.4-4ubuntu3.6, apt@2.0.5, procps/libprocps8@2:3.3.16-1ubuntu2.1, util-linux/bsdutils@1:2.34-0.1ubuntu9.1, openssh/ssh@1:8.2p1-4ubuntu0.2, util-linux/mount@2.34-0.1ubuntu9.1, systemd/libudev1@245.4-4ubuntu3.6
-  From: systemd/libsystemd0@245.4-4ubuntu3.6
-  From: apt@2.0.5 > systemd/libsystemd0@245.4-4ubuntu3.6
-  From: procps/libprocps8@2:3.3.16-1ubuntu2.1 > systemd/libsystemd0@245.4-4ubuntu3.6
-  and 8 more...
-
 ✗ Medium severity vulnerability found in sqlite3/libsqlite3-0
   Description: Out-of-bounds Read
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-581593
@@ -288,50 +272,16 @@ Testing rzlamrr/dvstlab:lite...
   From: curl@7.68.0-1ubuntu2.5 > curl/libcurl4@7.68.0-1ubuntu2.5 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
-✗ Medium severity vulnerability found in lz4/liblz4-1
-  Description: CVE-2021-3520
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LZ4-1278678
-  Introduced through: lz4/liblz4-1@1.9.2-2, libzstd/zstd@1.4.4+dfsg-3ubuntu0.1, apt@2.0.5
-  From: lz4/liblz4-1@1.9.2-2
-  From: libzstd/zstd@1.4.4+dfsg-3ubuntu0.1 > lz4/liblz4-1@1.9.2-2
-  From: apt@2.0.5 > apt/libapt-pkg6.0@2.0.5 > lz4/liblz4-1@1.9.2-2
-  and 1 more...
-  Fixed in: 1.9.2-2ubuntu0.20.04.1
-
-✗ Medium severity vulnerability found in libxml2
-  Description: Use After Free
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1278686
-  Introduced through: libxml2@2.9.10+dfsg-5
-  From: libxml2@2.9.10+dfsg-5
+✗ Medium severity vulnerability found in nettle/libnettle7
+  Description: CVE-2021-3580
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-NETTLE-1303240
+  Introduced through: nettle/libnettle7@3.5.1+really3.5.1-2ubuntu0.1, apt@2.0.5, git@1:2.25.1-1ubuntu3.1, curl@7.68.0-1ubuntu2.5, nettle/libhogweed5@3.5.1+really3.5.1-2ubuntu0.1
+  From: nettle/libnettle7@3.5.1+really3.5.1-2ubuntu0.1
+  From: apt@2.0.5 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3 > nettle/libnettle7@3.5.1+really3.5.1-2ubuntu0.1
+  From: git@1:2.25.1-1ubuntu3.1 > curl/libcurl3-gnutls@7.68.0-1ubuntu2.5 > nettle/libnettle7@3.5.1+really3.5.1-2ubuntu0.1
+  and 5 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
-
-✗ Medium severity vulnerability found in libxml2
-  Description: Out-of-bounds Write
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1278690
-  Introduced through: libxml2@2.9.10+dfsg-5
-  From: libxml2@2.9.10+dfsg-5
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
-
-✗ Medium severity vulnerability found in libxml2
-  Description: Use After Free
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1278694
-  Introduced through: libxml2@2.9.10+dfsg-5
-  From: libxml2@2.9.10+dfsg-5
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
-
-✗ Medium severity vulnerability found in libxml2
-  Description: NULL Pointer Dereference
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1290394
-  Introduced through: libxml2@2.9.10+dfsg-5
-  From: libxml2@2.9.10+dfsg-5
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
-
-✗ Medium severity vulnerability found in libxml2
-  Description: CVE-2021-3541
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBXML2-1295536
-  Introduced through: libxml2@2.9.10+dfsg-5
-  From: libxml2@2.9.10+dfsg-5
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Fixed in: 3.5.1+really3.5.1-2ubuntu0.2
 
 ✗ Medium severity vulnerability found in gcc-defaults/cpp
   Description: Information Exposure
@@ -358,5 +308,5 @@ Docker image:      rzlamrr/dvstlab:lite
 Platform:          linux/amd64
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 42 issues.
+Tested 221 dependencies for known issues, found 35 issues.
 
