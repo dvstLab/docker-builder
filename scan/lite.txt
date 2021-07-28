@@ -1,31 +1,22 @@
 
 Testing rzlamrr/dvstlab:lite...
 
-✗ Low severity vulnerability found in systemd/libsystemd0
-  Description: Authentication Bypass
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SYSTEMD-1290722
-  Introduced through: systemd/libsystemd0@245.4-4ubuntu3.7, apt@2.0.6, procps/libprocps8@2:3.3.16-1ubuntu2.2, util-linux/bsdutils@1:2.34-0.1ubuntu9.1, openssh/ssh@1:8.2p1-4ubuntu0.2, util-linux/mount@2.34-0.1ubuntu9.1, systemd/libudev1@245.4-4ubuntu3.7
-  From: systemd/libsystemd0@245.4-4ubuntu3.7
-  From: apt@2.0.6 > systemd/libsystemd0@245.4-4ubuntu3.7
-  From: procps/libprocps8@2:3.3.16-1ubuntu2.2 > systemd/libsystemd0@245.4-4ubuntu3.7
-  and 8 more...
-
 ✗ Low severity vulnerability found in sqlite3/libsqlite3-0
   Description: CVE-2020-9991
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-1070680
-  Introduced through: python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2, curl@7.68.0-1ubuntu2.5
+  Introduced through: python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2, curl@7.68.0-1ubuntu2.6
   From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
-  From: curl@7.68.0-1ubuntu2.5 > curl/libcurl4@7.68.0-1ubuntu2.5 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
 ✗ Low severity vulnerability found in sqlite3/libsqlite3-0
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-1070691
-  Introduced through: python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2, curl@7.68.0-1ubuntu2.5
+  Introduced through: python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2, curl@7.68.0-1ubuntu2.6
   From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
-  From: curl@7.68.0-1ubuntu2.5 > curl/libcurl4@7.68.0-1ubuntu2.5 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
 ✗ Low severity vulnerability found in shadow/passwd
@@ -95,30 +86,30 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in krb5/libkrb5support0
   Description: Integer Overflow or Wraparound
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-579303
-  Introduced through: curl@7.68.0-1ubuntu2.5, openssh/ssh@1:8.2p1-4ubuntu0.2, git@1:2.25.1-1ubuntu3.1
-  From: curl@7.68.0-1ubuntu2.5 > curl/libcurl4@7.68.0-1ubuntu2.5 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
-  From: curl@7.68.0-1ubuntu2.5 > curl/libcurl4@7.68.0-1ubuntu2.5 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libk5crypto3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
-  From: curl@7.68.0-1ubuntu2.5 > curl/libcurl4@7.68.0-1ubuntu2.5 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
+  Introduced through: curl@7.68.0-1ubuntu2.6, openssh/ssh@1:8.2p1-4ubuntu0.2, git@1:2.25.1-1ubuntu3.1
+  From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
+  From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libk5crypto3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
+  From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   and 9 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
 ✗ Low severity vulnerability found in gnutls28/libgnutls30
   Description: Use After Free
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GNUTLS28-1085477
-  Introduced through: gnutls28/libgnutls30@3.6.13-2ubuntu1.3, apt@2.0.6, git@1:2.25.1-1ubuntu3.1, curl@7.68.0-1ubuntu2.5
+  Introduced through: gnutls28/libgnutls30@3.6.13-2ubuntu1.3, apt@2.0.6, git@1:2.25.1-1ubuntu3.1, curl@7.68.0-1ubuntu2.6
   From: gnutls28/libgnutls30@3.6.13-2ubuntu1.3
   From: apt@2.0.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
-  From: git@1:2.25.1-1ubuntu3.1 > curl/libcurl3-gnutls@7.68.0-1ubuntu2.5 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
+  From: git@1:2.25.1-1ubuntu3.1 > curl/libcurl3-gnutls@7.68.0-1ubuntu2.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
   and 2 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
 ✗ Low severity vulnerability found in gnutls28/libgnutls30
   Description: Use After Free
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GNUTLS28-1085499
-  Introduced through: gnutls28/libgnutls30@3.6.13-2ubuntu1.3, apt@2.0.6, git@1:2.25.1-1ubuntu3.1, curl@7.68.0-1ubuntu2.5
+  Introduced through: gnutls28/libgnutls30@3.6.13-2ubuntu1.3, apt@2.0.6, git@1:2.25.1-1ubuntu3.1, curl@7.68.0-1ubuntu2.6
   From: gnutls28/libgnutls30@3.6.13-2ubuntu1.3
   From: apt@2.0.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
-  From: git@1:2.25.1-1ubuntu3.1 > curl/libcurl3-gnutls@7.68.0-1ubuntu2.5 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
+  From: git@1:2.25.1-1ubuntu3.1 > curl/libcurl3-gnutls@7.68.0-1ubuntu2.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
   and 2 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
@@ -193,15 +184,6 @@ Testing rzlamrr/dvstlab:lite...
   From: git@1:2.25.1-1ubuntu3.1
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
-✗ Low severity vulnerability found in curl/libcurl4
-  Description: Missing Initialization of Resource
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-CURL-1296912
-  Introduced through: curl@7.68.0-1ubuntu2.5, git@1:2.25.1-1ubuntu3.1
-  From: curl@7.68.0-1ubuntu2.5 > curl/libcurl4@7.68.0-1ubuntu2.5
-  From: curl@7.68.0-1ubuntu2.5
-  From: git@1:2.25.1-1ubuntu3.1 > curl/libcurl3-gnutls@7.68.0-1ubuntu2.5
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
-
 ✗ Low severity vulnerability found in coreutils
   Description: Improper Input Validation
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-COREUTILS-583876
@@ -268,10 +250,20 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Medium severity vulnerability found in sqlite3/libsqlite3-0
   Description: Out-of-bounds Read
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-581593
-  Introduced through: python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2, curl@7.68.0-1ubuntu2.5
+  Introduced through: python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2, curl@7.68.0-1ubuntu2.6
   From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
-  From: curl@7.68.0-1ubuntu2.5 > curl/libcurl4@7.68.0-1ubuntu2.5 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+
+✗ Medium severity vulnerability found in krb5/libkrb5support0
+  Description: CVE-2021-36222
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-1533536
+  Introduced through: curl@7.68.0-1ubuntu2.6, openssh/ssh@1:8.2p1-4ubuntu0.2, git@1:2.25.1-1ubuntu3.1
+  From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
+  From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libk5crypto3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
+  From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
+  and 9 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
 ✗ Medium severity vulnerability found in gcc-defaults/cpp
@@ -290,15 +282,6 @@ Testing rzlamrr/dvstlab:lite...
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > gcc-9/gcc-9-base@9.3.0-17ubuntu1~20.04
   and 6 more...
 
-✗ High severity vulnerability found in systemd/libsystemd0
-  Description: CVE-2021-33910
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SYSTEMD-1320127
-  Introduced through: systemd/libsystemd0@245.4-4ubuntu3.7, apt@2.0.6, procps/libprocps8@2:3.3.16-1ubuntu2.2, util-linux/bsdutils@1:2.34-0.1ubuntu9.1, openssh/ssh@1:8.2p1-4ubuntu0.2, util-linux/mount@2.34-0.1ubuntu9.1, systemd/libudev1@245.4-4ubuntu3.7
-  From: systemd/libsystemd0@245.4-4ubuntu3.7
-  From: apt@2.0.6 > systemd/libsystemd0@245.4-4ubuntu3.7
-  From: procps/libprocps8@2:3.3.16-1ubuntu2.2 > systemd/libsystemd0@245.4-4ubuntu3.7
-  and 8 more...
-
 
 
 Organization:      rzlamrr
@@ -308,5 +291,5 @@ Docker image:      rzlamrr/dvstlab:lite
 Platform:          linux/amd64
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 35 issues.
+Tested 221 dependencies for known issues, found 33 issues.
 
