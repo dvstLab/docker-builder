@@ -24,6 +24,7 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: android-sdk-meta/android-sdk-platform-tools@27.0.0+12, meta-common-packages@meta
   From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > sqlite3@3.31.1-4ubuntu0.2
   From: meta-common-packages@meta > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in sqlite3
   Description: Information Exposure
@@ -31,6 +32,7 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: android-sdk-meta/android-sdk-platform-tools@27.0.0+12, meta-common-packages@meta
   From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > sqlite3@3.31.1-4ubuntu0.2
   From: meta-common-packages@meta > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in shadow/login
   Description: Time-of-check Time-of-use (TOCTOU)
@@ -38,6 +40,7 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: meta-common-packages@meta
   From: meta-common-packages@meta > shadow/login@1:4.8.1-1ubuntu5.20.04
   From: meta-common-packages@meta > shadow/passwd@1:4.8.1-1ubuntu5.20.04
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in rpm/librpmio8
   Description: CVE-2021-20248
@@ -47,6 +50,7 @@ Testing rzlamrr/dvstlab:focal...
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/debugedit@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/librpmbuild8@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
   and 17 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in rpm/librpmio8
   Description: Improper Verification of Cryptographic Signature
@@ -56,6 +60,7 @@ Testing rzlamrr/dvstlab:focal...
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/debugedit@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/librpmbuild8@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
   and 17 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in rpm/librpmio8
   Description: CVE-2021-20249
@@ -65,6 +70,7 @@ Testing rzlamrr/dvstlab:focal...
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/debugedit@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/librpmbuild8@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
   and 17 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in rpm/librpmio8
   Description: Out-of-bounds Read
@@ -74,6 +80,7 @@ Testing rzlamrr/dvstlab:focal...
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/debugedit@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/librpmbuild8@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
   and 17 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in rpm/librpmio8
   Description: Insufficient Verification of Data Authenticity
@@ -83,6 +90,7 @@ Testing rzlamrr/dvstlab:focal...
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/debugedit@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/librpmbuild8@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
   and 17 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in re2c
   Description: Uncontrolled Recursion
@@ -99,6 +107,7 @@ Testing rzlamrr/dvstlab:focal...
   From: lsb/lsb-core@11.1.0ubuntu2 > mailutils@1:3.7-2.1 > mailutils/libmailutils6@1:3.7-2.1 > python3.8/libpython3.8@3.8.10-0ubuntu1~20.04 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04 > python3.8/libpython3.8-minimal@3.8.10-0ubuntu1~20.04
   From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04
   and 14 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in python-urllib3/python3-urllib3
   Description: Resource Exhaustion
@@ -106,6 +115,7 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: requests/python3-requests@2.22.0-2ubuntu1, software-properties/software-properties-common@0.98.9.5
   From: requests/python3-requests@2.22.0-2ubuntu1 > python-urllib3/python3-urllib3@1.25.8-2ubuntu0.1
   From: software-properties/software-properties-common@0.98.9.5 > python-requests-unixsocket/python3-requests-unixsocket@0.2.0-2 > python-urllib3/python3-urllib3@1.25.8-2ubuntu0.1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in policykit-1/libpolkit-gobject-1-0
   Description: Improper Encoding or Escaping of Output
@@ -115,6 +125,7 @@ Testing rzlamrr/dvstlab:focal...
   From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1.1
   From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > policykit-1/libpolkit-agent-1-0@0.105-26ubuntu1.1 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1.1
   and 2 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in pcre3/libpcre16-3
   Description: Uncontrolled Recursion
@@ -124,6 +135,7 @@ Testing rzlamrr/dvstlab:focal...
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre32-3@2:8.39-12build1
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcrecpp0v5@2:8.39-12build1
   and 2 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in pcre3/libpcre16-3
   Description: Out-of-bounds Read
@@ -133,6 +145,7 @@ Testing rzlamrr/dvstlab:focal...
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre32-3@2:8.39-12build1
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcrecpp0v5@2:8.39-12build1
   and 2 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in pcre3/libpcre16-3
   Description: Integer Overflow or Wraparound
@@ -142,18 +155,21 @@ Testing rzlamrr/dvstlab:focal...
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre32-3@2:8.39-12build1
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcrecpp0v5@2:8.39-12build1
   and 2 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in pax
   Description: Link Following
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PAX-576779
   Introduced through: lsb/lsb-core@11.1.0ubuntu2
   From: lsb/lsb-core@11.1.0ubuntu2 > pax@1:20190825-1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in pax
   Description: Directory Traversal
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PAX-584206
   Introduced through: lsb/lsb-core@11.1.0ubuntu2
   From: lsb/lsb-core@11.1.0ubuntu2 > pax@1:20190825-1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in patch
   Description: Double Free
@@ -172,6 +188,7 @@ Testing rzlamrr/dvstlab:focal...
   From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-server@1:8.2p1-4ubuntu0.2 > openssh/openssh-client@1:8.2p1-4ubuntu0.2
   From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-server@1:8.2p1-4ubuntu0.2 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.2 > openssh/openssh-client@1:8.2p1-4ubuntu0.2
   and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in nss/libnss3
   Description: Allocation of Resources Without Limits or Throttling
@@ -191,6 +208,7 @@ Testing rzlamrr/dvstlab:focal...
   From: lsb/lsb-core@11.1.0ubuntu2 > mailutils@1:3.7-2.1 > mailutils/libmailutils6@1:3.7-2.1 > mailutils/mailutils-common@1:3.7-2.1
   From: lsb/lsb-core@11.1.0ubuntu2 > mailutils@1:3.7-2.1 > mailutils/libmailutils6@1:3.7-2.1
   and 1 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in libxslt/libxslt1.1
   Description: Use of Insufficiently Random Values
@@ -198,36 +216,42 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: libxslt/xsltproc@1.1.34-4
   From: libxslt/xsltproc@1.1.34-4 > libxslt/libxslt1.1@1.1.34-4
   From: libxslt/xsltproc@1.1.34-4
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in libtasn1-6
   Description: Resource Management Errors
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBTASN16-578037
   Introduced through: meta-common-packages@meta
   From: meta-common-packages@meta > libtasn1-6@4.16.0-2
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in libjpeg-turbo/libjpeg-turbo8
   Description: Out-of-bounds Write
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBJPEGTURBO-1299079
   Introduced through: android-sdk-meta/android-sdk-platform-tools@27.0.0+12
   From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2 > libjpeg8-empty/libjpeg8@8c-2ubuntu8 > libjpeg-turbo/libjpeg-turbo8@2.0.3-0ubuntu1.20.04.1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in libgcrypt20
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGCRYPT20-1297919
   Introduced through: meta-common-packages@meta
   From: meta-common-packages@meta > libgcrypt20@1.8.5-5ubuntu1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in libcroco/libcroco3
   Description: Out-of-Bounds
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBCROCO-580654
   Introduced through: lsb/lsb-core@11.1.0ubuntu2
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > debhelper@12.10ubuntu1 > po-debconf@1.0.21 > gettext@0.19.8.1-10build1 > libcroco/libcroco3@0.6.13-1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in libcroco/libcroco3
   Description: Loop with Unreachable Exit Condition ('Infinite Loop')
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBCROCO-583737
   Introduced through: lsb/lsb-core@11.1.0ubuntu2
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > debhelper@12.10ubuntu1 > po-debconf@1.0.21 > gettext@0.19.8.1-10build1 > libcroco/libcroco3@0.6.13-1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in krb5/libkrb5-3
   Description: Integer Overflow or Wraparound
@@ -342,22 +366,7 @@ Testing rzlamrr/dvstlab:focal...
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GROFF-578139
   Introduced through: lsb/lsb-core@11.1.0ubuntu2
   From: lsb/lsb-core@11.1.0ubuntu2 > man-db@2.9.1-1 > groff/groff-base@1.22.4-4build1
-
-✗ Low severity vulnerability found in gnutls28/libgnutls30
-  Description: Use After Free
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GNUTLS28-1085477
-  Introduced through: meta-common-packages@meta, wput@0.6.2+git20130413-8
-  From: meta-common-packages@meta > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
-  From: wput@0.6.2+git20130413-8 > gnutls28/libgnutls-openssl27@3.6.13-2ubuntu1.3
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
-
-✗ Low severity vulnerability found in gnutls28/libgnutls30
-  Description: Use After Free
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GNUTLS28-1085499
-  Introduced through: meta-common-packages@meta, wput@0.6.2+git20130413-8
-  From: meta-common-packages@meta > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
-  From: wput@0.6.2+git20130413-8 > gnutls28/libgnutls-openssl27@3.6.13-2ubuntu1.3
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in glibc/libc6-dev-i386
   Description: Reachable Assertion
@@ -456,7 +465,8 @@ Testing rzlamrr/dvstlab:focal...
   Description: Out-of-bounds Read
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-FLAC-1053005
   Introduced through: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5
-  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libsdl1.2/libsdl1.2debian@1.2.15+dfsg2-5 > pulseaudio/libpulse0@1:13.99.1-1ubuntu3.11 > libsndfile/libsndfile1@1.0.28-7 > flac/libflac8@1.3.3-1build1
+  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libsdl1.2/libsdl1.2debian@1.2.15+dfsg2-5 > pulseaudio/libpulse0@1:13.99.1-1ubuntu3.11 > libsndfile/libsndfile1@1.0.28-7ubuntu0.1 > flac/libflac8@1.3.3-1build1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in dbus/libdbus-1-3
   Description: Use After Free
@@ -466,6 +476,7 @@ Testing rzlamrr/dvstlab:focal...
   From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > dbus@1.12.16-2ubuntu2.1
   From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > systemd/libpam-systemd@245.4-4ubuntu3.11 > dbus@1.12.16-2ubuntu2.1
   and 2 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in cups/libcups2
   Description: Improper Input Validation
@@ -596,6 +607,7 @@ Testing rzlamrr/dvstlab:focal...
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-BASH-581100
   Introduced through: bash@5.0-6ubuntu1.1
   From: bash@5.0-6ubuntu1.1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in wget
   Description: Open Redirect
@@ -610,12 +622,28 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: android-sdk-meta/android-sdk-platform-tools@27.0.0+12, meta-common-packages@meta
   From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > sqlite3@3.31.1-4ubuntu0.2
   From: meta-common-packages@meta > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
-✗ Medium severity vulnerability found in libsndfile/libsndfile1
-  Description: CVE-2021-3246
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBSNDFILE-1322737
-  Introduced through: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5
-  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libsdl1.2/libsdl1.2debian@1.2.15+dfsg2-5 > pulseaudio/libpulse0@1:13.99.1-1ubuntu3.11 > libsndfile/libsndfile1@1.0.28-7
+✗ Medium severity vulnerability found in openjdk-lts/openjdk-11-jre-headless
+  Description: CVE-2021-2388
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENJDKLTS-1323600
+  Introduced through: openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04
+  From: openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Medium severity vulnerability found in openjdk-lts/openjdk-11-jre-headless
+  Description: CVE-2021-2369
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENJDKLTS-1324327
+  Introduced through: openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04
+  From: openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Medium severity vulnerability found in openjdk-lts/openjdk-11-jre-headless
+  Description: CVE-2021-2341
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENJDKLTS-1324342
+  Introduced through: openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04
+  From: openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in libcaca/libcaca0
   Description: Out-of-Bounds
@@ -624,6 +652,7 @@ Testing rzlamrr/dvstlab:focal...
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libcaca/libcaca-dev@0.99.beta19-2.1ubuntu1.20.04.1 > libcaca/libcaca0@0.99.beta19-2.1ubuntu1.20.04.1
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libsdl1.2/libsdl1.2debian@1.2.15+dfsg2-5 > libcaca/libcaca0@0.99.beta19-2.1ubuntu1.20.04.1
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libcaca/libcaca-dev@0.99.beta19-2.1ubuntu1.20.04.1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in libcaca/libcaca0
   Description: Out-of-Bounds
@@ -632,9 +661,19 @@ Testing rzlamrr/dvstlab:focal...
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libcaca/libcaca-dev@0.99.beta19-2.1ubuntu1.20.04.1 > libcaca/libcaca0@0.99.beta19-2.1ubuntu1.20.04.1
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libsdl1.2/libsdl1.2debian@1.2.15+dfsg2-5 > libcaca/libcaca0@0.99.beta19-2.1ubuntu1.20.04.1
   From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libcaca/libcaca-dev@0.99.beta19-2.1ubuntu1.20.04.1
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Medium severity vulnerability found in libarchive/libarchive13
+  Description: Use After Free
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBARCHIVE-1325495
+  Introduced through: cmake@3.16.3-1ubuntu1, pixz@1.0.6-2build1, lsb/lsb-core@11.1.0ubuntu2
+  From: cmake@3.16.3-1ubuntu1 > libarchive/libarchive13@3.4.0-2ubuntu1
+  From: pixz@1.0.6-2build1 > libarchive/libarchive13@3.4.0-2ubuntu1
+  From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/rpm2cpio@4.14.2.1+dfsg1-1build2 > libarchive/libarchive13@3.4.0-2ubuntu1
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
 ✗ Medium severity vulnerability found in krb5/libkrb5-3
-  Description: CVE-2021-36222
+  Description: NULL Pointer Dereference
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-1533536
   Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.2, ca-certificates-java@20190405ubuntu1, cmake@3.16.3-1ubuntu1, git@1:2.25.1-1ubuntu3.1, lsb/lsb-core@11.1.0ubuntu2, software-properties/software-properties-common@0.98.9.5, meta-common-packages@meta
   From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-server@1:8.2p1-4ubuntu0.2 > krb5/libkrb5-3@1.17-6ubuntu4.1
@@ -691,6 +730,7 @@ Testing rzlamrr/dvstlab:focal...
   From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-system-core/fastboot@1:8.1.0+r23-5ubuntu2 > android-platform-system-extras/android-libf2fs-utils@8.1.0+r23-2 > f2fs-tools/libf2fs-format4@1.11.0-1.1ubuntu1
   From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > f2fs-tools@1.11.0-1.1ubuntu1 > f2fs-tools/libf2fs5@1.11.0-1.1ubuntu1
   and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in commons-io/libcommons-io-java
   Description: Directory Traversal
@@ -711,6 +751,7 @@ Testing rzlamrr/dvstlab:focal...
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-APPARMOR-583685
   Introduced through: meta-common-packages@meta
   From: meta-common-packages@meta > apparmor/libapparmor1@2.13.3-7ubuntu5.1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 
 
@@ -719,7 +760,10 @@ Package manager:   deb
 Project name:      docker-image|rzlamrr/dvstlab
 Docker image:      rzlamrr/dvstlab:focal
 Platform:          linux/amd64
+Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 738 dependencies for known issues, found 83 issues.
+Tested 738 dependencies for known issues, found 84 issues.
+
+According to our scan, you are currently using the most secure version of the selected base image
 

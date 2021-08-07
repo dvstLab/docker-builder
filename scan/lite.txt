@@ -27,6 +27,7 @@ Testing rzlamrr/dvstlab:lite...
   From: adduser@3.118ubuntu2 > shadow/passwd@1:4.8.1-1ubuntu5.20.04
   From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-client@1:8.2p1-4ubuntu0.2 > shadow/passwd@1:4.8.1-1ubuntu5.20.04
   and 2 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in python3.8/libpython3.8-stdlib
   Description: HTTP Request Smuggling
@@ -36,6 +37,7 @@ Testing rzlamrr/dvstlab:lite...
   From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04
   From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04
   and 12 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in pcre3/libpcre3
   Description: Uncontrolled Recursion
@@ -43,6 +45,7 @@ Testing rzlamrr/dvstlab:lite...
   Introduced through: pcre3/libpcre3@2:8.39-12build1, grep@3.4-1
   From: pcre3/libpcre3@2:8.39-12build1
   From: grep@3.4-1 > pcre3/libpcre3@2:8.39-12build1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in pcre3/libpcre3
   Description: Out-of-bounds Read
@@ -50,6 +53,7 @@ Testing rzlamrr/dvstlab:lite...
   Introduced through: pcre3/libpcre3@2:8.39-12build1, grep@3.4-1
   From: pcre3/libpcre3@2:8.39-12build1
   From: grep@3.4-1 > pcre3/libpcre3@2:8.39-12build1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in pcre3/libpcre3
   Description: Integer Overflow or Wraparound
@@ -57,6 +61,7 @@ Testing rzlamrr/dvstlab:lite...
   Introduced through: pcre3/libpcre3@2:8.39-12build1, grep@3.4-1
   From: pcre3/libpcre3@2:8.39-12build1
   From: grep@3.4-1 > pcre3/libpcre3@2:8.39-12build1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in openssh/openssh-client
   Description: Information Exposure
@@ -66,6 +71,7 @@ Testing rzlamrr/dvstlab:lite...
   From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-server@1:8.2p1-4ubuntu0.2 > openssh/openssh-client@1:8.2p1-4ubuntu0.2
   From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-server@1:8.2p1-4ubuntu0.2 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.2 > openssh/openssh-client@1:8.2p1-4ubuntu0.2
   and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in libtasn1-6
   Description: Resource Management Errors
@@ -73,6 +79,7 @@ Testing rzlamrr/dvstlab:lite...
   Introduced through: libtasn1-6@4.16.0-2, apt@2.0.6
   From: libtasn1-6@4.16.0-2
   From: apt@2.0.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3 > libtasn1-6@4.16.0-2
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in libgcrypt20
   Description: Information Exposure
@@ -82,6 +89,7 @@ Testing rzlamrr/dvstlab:lite...
   From: apt@2.0.6 > apt/libapt-pkg6.0@2.0.6 > libgcrypt20@1.8.5-5ubuntu1
   From: apt@2.0.6 > gnupg2/gpgv@2.2.19-3ubuntu2.1 > libgcrypt20@1.8.5-5ubuntu1
   and 1 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in krb5/libkrb5support0
   Description: Integer Overflow or Wraparound
@@ -102,6 +110,7 @@ Testing rzlamrr/dvstlab:lite...
   From: git@1:2.25.1-1ubuntu3.1 > curl/libcurl3-gnutls@7.68.0-1ubuntu2.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
   and 2 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Fixed in: 3.6.13-2ubuntu1.6
 
 ✗ Low severity vulnerability found in gnutls28/libgnutls30
   Description: Use After Free
@@ -112,6 +121,7 @@ Testing rzlamrr/dvstlab:lite...
   From: git@1:2.25.1-1ubuntu3.1 > curl/libcurl3-gnutls@7.68.0-1ubuntu2.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
   and 2 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Fixed in: 3.6.13-2ubuntu1.6
 
 ✗ Low severity vulnerability found in glibc/libc-bin
   Description: Reachable Assertion
@@ -121,6 +131,7 @@ Testing rzlamrr/dvstlab:lite...
   From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
   From: glibc/libc6-dev@2.31-0ubuntu9.2
   and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in glibc/libc-bin
   Description: Loop with Unreachable Exit Condition ('Infinite Loop')
@@ -130,6 +141,7 @@ Testing rzlamrr/dvstlab:lite...
   From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
   From: glibc/libc6-dev@2.31-0ubuntu9.2
   and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in glibc/libc-bin
   Description: Out-of-bounds Read
@@ -139,6 +151,7 @@ Testing rzlamrr/dvstlab:lite...
   From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
   From: glibc/libc6-dev@2.31-0ubuntu9.2
   and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in glibc/libc-bin
   Description: Reachable Assertion
@@ -148,6 +161,7 @@ Testing rzlamrr/dvstlab:lite...
   From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
   From: glibc/libc6-dev@2.31-0ubuntu9.2
   and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in glibc/libc-bin
   Description: Double Free
@@ -157,6 +171,7 @@ Testing rzlamrr/dvstlab:lite...
   From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
   From: glibc/libc6-dev@2.31-0ubuntu9.2
   and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in glibc/libc-bin
   Description: Improper Input Validation
@@ -166,6 +181,7 @@ Testing rzlamrr/dvstlab:lite...
   From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
   From: glibc/libc6-dev@2.31-0ubuntu9.2
   and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in glibc/libc-bin
   Description: Integer Underflow
@@ -175,6 +191,7 @@ Testing rzlamrr/dvstlab:lite...
   From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
   From: glibc/libc6-dev@2.31-0ubuntu9.2
   and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in git/git-man
   Description: Improper Input Validation
@@ -190,6 +207,7 @@ Testing rzlamrr/dvstlab:lite...
   Introduced through: coreutils@8.30-3ubuntu2, openssh/ssh@1:8.2p1-4ubuntu0.2
   From: coreutils@8.30-3ubuntu2
   From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-server@1:8.2p1-4ubuntu0.2 > ucf@3.0038+nmu1 > coreutils@8.30-3ubuntu2
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in bison
   Description: Use After Free
@@ -206,6 +224,7 @@ Testing rzlamrr/dvstlab:lite...
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/libbinutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
   and 7 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in binutils/binutils-common
   Description: Allocation of Resources Without Limits or Throttling
@@ -215,6 +234,7 @@ Testing rzlamrr/dvstlab:lite...
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/libbinutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
   and 7 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in binutils/binutils-common
   Description: Improper Input Validation
@@ -224,6 +244,7 @@ Testing rzlamrr/dvstlab:lite...
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/libbinutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
   and 7 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in binutils/binutils-common
   Description: Missing Release of Resource after Effective Lifetime
@@ -233,12 +254,14 @@ Testing rzlamrr/dvstlab:lite...
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/libbinutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
   and 7 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in bash
   Description: Improper Check for Dropped Privileges
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-BASH-581100
   Introduced through: bash@5.0-6ubuntu1.1
   From: bash@5.0-6ubuntu1.1
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in wget
   Description: Open Redirect
@@ -257,7 +280,7 @@ Testing rzlamrr/dvstlab:lite...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
 ✗ Medium severity vulnerability found in krb5/libkrb5support0
-  Description: CVE-2021-36222
+  Description: NULL Pointer Dereference
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-1533536
   Introduced through: curl@7.68.0-1ubuntu2.6, openssh/ssh@1:8.2p1-4ubuntu0.2, git@1:2.25.1-1ubuntu3.1
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
@@ -272,6 +295,7 @@ Testing rzlamrr/dvstlab:lite...
   Introduced through: gcc-defaults/gcc@4:9.3.0-1ubuntu2
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-defaults/cpp@4:9.3.0-1ubuntu2
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in gcc-9/cpp-9
   Description: Information Exposure
@@ -281,6 +305,7 @@ Testing rzlamrr/dvstlab:lite...
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-defaults/cpp@4:9.3.0-1ubuntu2 > gcc-9/cpp-9@9.3.0-17ubuntu1~20.04
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > gcc-9/gcc-9-base@9.3.0-17ubuntu1~20.04
   and 6 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 
 
@@ -289,7 +314,10 @@ Package manager:   deb
 Project name:      docker-image|rzlamrr/dvstlab
 Docker image:      rzlamrr/dvstlab:lite
 Platform:          linux/amd64
+Base image:        ubuntu:20.04
 Licenses:          enabled
 
 Tested 221 dependencies for known issues, found 33 issues.
+
+According to our scan, you are currently using the most secure version of the selected base image
 
