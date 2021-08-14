@@ -22,10 +22,10 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in shadow/passwd
   Description: Time-of-check Time-of-use (TOCTOU)
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SHADOW-577863
-  Introduced through: shadow/passwd@1:4.8.1-1ubuntu5.20.04, adduser@3.118ubuntu2, openssh/ssh@1:8.2p1-4ubuntu0.2, shadow/login@1:4.8.1-1ubuntu5.20.04, util-linux/mount@2.34-0.1ubuntu9.1
+  Introduced through: shadow/passwd@1:4.8.1-1ubuntu5.20.04, adduser@3.118ubuntu2, openssh/ssh@1:8.2p1-4ubuntu0.3, shadow/login@1:4.8.1-1ubuntu5.20.04, util-linux/mount@2.34-0.1ubuntu9.1
   From: shadow/passwd@1:4.8.1-1ubuntu5.20.04
   From: adduser@3.118ubuntu2 > shadow/passwd@1:4.8.1-1ubuntu5.20.04
-  From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-client@1:8.2p1-4ubuntu0.2 > shadow/passwd@1:4.8.1-1ubuntu5.20.04
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3 > shadow/passwd@1:4.8.1-1ubuntu5.20.04
   and 2 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -66,10 +66,10 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in openssh/openssh-client
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENSSH-1047872
-  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.2
-  From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-client@1:8.2p1-4ubuntu0.2
-  From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-server@1:8.2p1-4ubuntu0.2 > openssh/openssh-client@1:8.2p1-4ubuntu0.2
-  From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-server@1:8.2p1-4ubuntu0.2 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.2 > openssh/openssh-client@1:8.2p1-4ubuntu0.2
+  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
   and 3 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -94,7 +94,7 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in krb5/libkrb5support0
   Description: Integer Overflow or Wraparound
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-579303
-  Introduced through: curl@7.68.0-1ubuntu2.6, openssh/ssh@1:8.2p1-4ubuntu0.2, git@1:2.25.1-1ubuntu3.1
+  Introduced through: curl@7.68.0-1ubuntu2.6, openssh/ssh@1:8.2p1-4ubuntu0.3, git@1:2.25.1-1ubuntu3.1
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libk5crypto3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
@@ -204,9 +204,9 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in coreutils
   Description: Improper Input Validation
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-COREUTILS-583876
-  Introduced through: coreutils@8.30-3ubuntu2, openssh/ssh@1:8.2p1-4ubuntu0.2
+  Introduced through: coreutils@8.30-3ubuntu2, openssh/ssh@1:8.2p1-4ubuntu0.3
   From: coreutils@8.30-3ubuntu2
-  From: openssh/ssh@1:8.2p1-4ubuntu0.2 > openssh/openssh-server@1:8.2p1-4ubuntu0.2 > ucf@3.0038+nmu1 > coreutils@8.30-3ubuntu2
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > ucf@3.0038+nmu1 > coreutils@8.30-3ubuntu2
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in bison
@@ -282,7 +282,7 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Medium severity vulnerability found in krb5/libkrb5support0
   Description: NULL Pointer Dereference
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-1533536
-  Introduced through: curl@7.68.0-1ubuntu2.6, openssh/ssh@1:8.2p1-4ubuntu0.2, git@1:2.25.1-1ubuntu3.1
+  Introduced through: curl@7.68.0-1ubuntu2.6, openssh/ssh@1:8.2p1-4ubuntu0.3, git@1:2.25.1-1ubuntu3.1
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libk5crypto3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
