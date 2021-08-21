@@ -733,7 +733,7 @@ Testing rzlamrr/dvstlab:focal...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in cpio
-  Description: CVE-2021-38185
+  Description: Integer Overflow or Wraparound
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-CPIO-1537785
   Introduced through: lsb/lsb-core@11.1.0ubuntu2
   From: lsb/lsb-core@11.1.0ubuntu2 > cpio@2.13+dfsg-2
