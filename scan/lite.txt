@@ -22,10 +22,10 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in shadow/passwd
   Description: Time-of-check Time-of-use (TOCTOU)
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SHADOW-577863
-  Introduced through: shadow/passwd@1:4.8.1-1ubuntu5.20.04, adduser@3.118ubuntu2, openssh/ssh@1:8.2p1-4ubuntu0.3, shadow/login@1:4.8.1-1ubuntu5.20.04, util-linux/mount@2.34-0.1ubuntu9.1
-  From: shadow/passwd@1:4.8.1-1ubuntu5.20.04
-  From: adduser@3.118ubuntu2 > shadow/passwd@1:4.8.1-1ubuntu5.20.04
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3 > shadow/passwd@1:4.8.1-1ubuntu5.20.04
+  Introduced through: shadow/passwd@1:4.8.1-1ubuntu5.20.04.1, adduser@3.118ubuntu2, openssh/ssh@1:8.2p1-4ubuntu0.3, shadow/login@1:4.8.1-1ubuntu5.20.04.1, util-linux/mount@2.34-0.1ubuntu9.1
+  From: shadow/passwd@1:4.8.1-1ubuntu5.20.04.1
+  From: adduser@3.118ubuntu2 > shadow/passwd@1:4.8.1-1ubuntu5.20.04.1
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3 > shadow/passwd@1:4.8.1-1ubuntu5.20.04.1
   and 2 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -78,7 +78,7 @@ Testing rzlamrr/dvstlab:lite...
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBTASN16-578037
   Introduced through: libtasn1-6@4.16.0-2, apt@2.0.6
   From: libtasn1-6@4.16.0-2
-  From: apt@2.0.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3 > libtasn1-6@4.16.0-2
+  From: apt@2.0.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.6 > libtasn1-6@4.16.0-2
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in libgcrypt20
@@ -100,28 +100,6 @@ Testing rzlamrr/dvstlab:lite...
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   and 9 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
-
-✗ Low severity vulnerability found in gnutls28/libgnutls30
-  Description: Use After Free
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GNUTLS28-1085477
-  Introduced through: gnutls28/libgnutls30@3.6.13-2ubuntu1.3, apt@2.0.6, git@1:2.25.1-1ubuntu3.1, curl@7.68.0-1ubuntu2.6
-  From: gnutls28/libgnutls30@3.6.13-2ubuntu1.3
-  From: apt@2.0.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
-  From: git@1:2.25.1-1ubuntu3.1 > curl/libcurl3-gnutls@7.68.0-1ubuntu2.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
-  and 2 more...
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
-  Fixed in: 3.6.13-2ubuntu1.6
-
-✗ Low severity vulnerability found in gnutls28/libgnutls30
-  Description: Use After Free
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GNUTLS28-1085499
-  Introduced through: gnutls28/libgnutls30@3.6.13-2ubuntu1.3, apt@2.0.6, git@1:2.25.1-1ubuntu3.1, curl@7.68.0-1ubuntu2.6
-  From: gnutls28/libgnutls30@3.6.13-2ubuntu1.3
-  From: apt@2.0.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
-  From: git@1:2.25.1-1ubuntu3.1 > curl/libcurl3-gnutls@7.68.0-1ubuntu2.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.3
-  and 2 more...
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
-  Fixed in: 3.6.13-2ubuntu1.6
 
 ✗ Low severity vulnerability found in glibc/libc-bin
   Description: Reachable Assertion
@@ -289,6 +267,14 @@ Testing rzlamrr/dvstlab:lite...
   and 9 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
+✗ Medium severity vulnerability found in git/git-man
+  Description: CVE-2021-40330
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GIT-1582289
+  Introduced through: git@1:2.25.1-1ubuntu3.1
+  From: git@1:2.25.1-1ubuntu3.1 > git/git-man@1:2.25.1-1ubuntu3.1
+  From: git@1:2.25.1-1ubuntu3.1
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+
 ✗ Medium severity vulnerability found in gcc-defaults/cpp
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GCCDEFAULTS-584255
@@ -317,7 +303,7 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 33 issues.
+Tested 221 dependencies for known issues, found 32 issues.
 
 According to our scan, you are currently using the most secure version of the selected base image
 
