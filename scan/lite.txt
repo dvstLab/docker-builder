@@ -94,7 +94,7 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in krb5/libkrb5support0
   Description: Integer Overflow or Wraparound
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-579303
-  Introduced through: curl@7.68.0-1ubuntu2.6, openssh/ssh@1:8.2p1-4ubuntu0.3, git@1:2.25.1-1ubuntu3.1
+  Introduced through: curl@7.68.0-1ubuntu2.6, openssh/ssh@1:8.2p1-4ubuntu0.3, git@1:2.25.1-1ubuntu3.2
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libk5crypto3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
@@ -174,9 +174,9 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in git/git-man
   Description: Improper Input Validation
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GIT-580979
-  Introduced through: git@1:2.25.1-1ubuntu3.1
-  From: git@1:2.25.1-1ubuntu3.1 > git/git-man@1:2.25.1-1ubuntu3.1
-  From: git@1:2.25.1-1ubuntu3.1
+  Introduced through: git@1:2.25.1-1ubuntu3.2
+  From: git@1:2.25.1-1ubuntu3.2 > git/git-man@1:2.25.1-1ubuntu3.2
+  From: git@1:2.25.1-1ubuntu3.2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
 ✗ Low severity vulnerability found in coreutils
@@ -260,7 +260,7 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Medium severity vulnerability found in krb5/libkrb5support0
   Description: NULL Pointer Dereference
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-1533536
-  Introduced through: curl@7.68.0-1ubuntu2.6, openssh/ssh@1:8.2p1-4ubuntu0.3, git@1:2.25.1-1ubuntu3.1
+  Introduced through: curl@7.68.0-1ubuntu2.6, openssh/ssh@1:8.2p1-4ubuntu0.3, git@1:2.25.1-1ubuntu3.2
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libk5crypto3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.6 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
@@ -270,9 +270,9 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Medium severity vulnerability found in git/git-man
   Description: CVE-2021-40330
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GIT-1582289
-  Introduced through: git@1:2.25.1-1ubuntu3.1
-  From: git@1:2.25.1-1ubuntu3.1 > git/git-man@1:2.25.1-1ubuntu3.1
-  From: git@1:2.25.1-1ubuntu3.1
+  Introduced through: git@1:2.25.1-1ubuntu3.2
+  From: git@1:2.25.1-1ubuntu3.2 > git/git-man@1:2.25.1-1ubuntu3.2
+  From: git@1:2.25.1-1ubuntu3.2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
 ✗ Medium severity vulnerability found in gcc-defaults/cpp

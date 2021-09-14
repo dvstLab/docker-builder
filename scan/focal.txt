@@ -14,7 +14,7 @@ Testing rzlamrr/dvstlab:focal...
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-TIFF-577862
   Introduced through: imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.4, android-sdk-meta/android-sdk-platform-tools@27.0.0+12, openjdk-8/openjdk-8-jdk@8u292-b10-0ubuntu1~20.04
   From: imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/imagemagick-6.q16@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/libmagickcore-6.q16-6@8:6.9.10.23+dfsg-2.1ubuntu11.4 > tiff/libtiff5@4.1.0+git191117-2ubuntu0.20.04.1
-  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2 > tiff/libtiff5@4.1.0+git191117-2ubuntu0.20.04.1
+  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2.1 > tiff/libtiff5@4.1.0+git191117-2ubuntu0.20.04.1
   From: openjdk-8/openjdk-8-jdk@8u292-b10-0ubuntu1~20.04 > openjdk-8/openjdk-8-jre@8u292-b10-0ubuntu1~20.04 > gtk+2.0/libgtk2.0-0@2.24.32-4ubuntu4 > gdk-pixbuf/libgdk-pixbuf2.0-0@2.40.0+dfsg-3ubuntu0.2 > tiff/libtiff5@4.1.0+git191117-2ubuntu0.20.04.1
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
@@ -229,23 +229,7 @@ Testing rzlamrr/dvstlab:focal...
   Description: Out-of-bounds Write
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBJPEGTURBO-1299079
   Introduced through: android-sdk-meta/android-sdk-platform-tools@27.0.0+12
-  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2 > libjpeg8-empty/libjpeg8@8c-2ubuntu8 > libjpeg-turbo/libjpeg-turbo8@2.0.3-0ubuntu1.20.04.1
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
-✗ Low severity vulnerability found in libgd2/libgd3
-  Description: Out-of-bounds Read
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGD2-1202228
-  Introduced through: android-sdk-meta/android-sdk-platform-tools@27.0.0+12
-  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2
-  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > graphviz/libgvc6@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
-✗ Low severity vulnerability found in libgd2/libgd3
-  Description: Out-of-bounds Read
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGD2-1536883
-  Introduced through: android-sdk-meta/android-sdk-platform-tools@27.0.0+12
-  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2
-  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > graphviz/libgvc6@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2
+  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2.1 > libjpeg8-empty/libjpeg8@8c-2ubuntu8 > libjpeg-turbo/libjpeg-turbo8@2.0.3-0ubuntu1.20.04.1
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in libgcrypt20
@@ -272,7 +256,7 @@ Testing rzlamrr/dvstlab:focal...
 ✗ Low severity vulnerability found in krb5/libkrb5-3
   Description: Integer Overflow or Wraparound
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-579303
-  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3, ca-certificates-java@20190405ubuntu1, cmake@3.16.3-1ubuntu1, git@1:2.25.1-1ubuntu3.1, lsb/lsb-core@11.1.0ubuntu2, software-properties/software-properties-common@0.98.9.5, meta-common-packages@meta
+  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3, ca-certificates-java@20190405ubuntu1, cmake@3.16.3-1ubuntu1, git@1:2.25.1-1ubuntu3.2, lsb/lsb-core@11.1.0ubuntu2, software-properties/software-properties-common@0.98.9.5, meta-common-packages@meta
   From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > krb5/libkrb5-3@1.17-6ubuntu4.1
   From: ca-certificates-java@20190405ubuntu1 > openjdk-8/openjdk-8-jre-headless@8u292-b10-0ubuntu1~20.04 > cups/libcups2@2.3.1-9ubuntu1.1 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1
   From: cmake@3.16.3-1ubuntu1 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1
@@ -284,7 +268,7 @@ Testing rzlamrr/dvstlab:focal...
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-JBIGKIT-578320
   Introduced through: imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.4, android-sdk-meta/android-sdk-platform-tools@27.0.0+12
   From: imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/imagemagick-6.q16@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/libmagickcore-6.q16-6@8:6.9.10.23+dfsg-2.1ubuntu11.4 > jbigkit/libjbig0@2.1-3.1build1
-  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2 > tiff/libtiff5@4.1.0+git191117-2ubuntu0.20.04.1 > jbigkit/libjbig0@2.1-3.1build1
+  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2.1 > tiff/libtiff5@4.1.0+git191117-2ubuntu0.20.04.1 > jbigkit/libjbig0@2.1-3.1build1
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
 ✗ Low severity vulnerability found in imagemagick/imagemagick-6-common
@@ -457,9 +441,9 @@ Testing rzlamrr/dvstlab:focal...
 ✗ Low severity vulnerability found in git/git-man
   Description: Improper Input Validation
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GIT-580979
-  Introduced through: git@1:2.25.1-1ubuntu3.1
-  From: git@1:2.25.1-1ubuntu3.1 > git/git-man@1:2.25.1-1ubuntu3.1
-  From: git@1:2.25.1-1ubuntu3.1
+  Introduced through: git@1:2.25.1-1ubuntu3.2
+  From: git@1:2.25.1-1ubuntu3.2 > git/git-man@1:2.25.1-1ubuntu3.2
+  From: git@1:2.25.1-1ubuntu3.2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
 ✗ Low severity vulnerability found in giflib/libgif7
@@ -661,14 +645,6 @@ Testing rzlamrr/dvstlab:focal...
   From: openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04
   Image layer: Introduced by your base image (ubuntu:20.04)
 
-✗ Medium severity vulnerability found in libgd2/libgd3
-  Description: Double Free
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGD2-1570389
-  Introduced through: android-sdk-meta/android-sdk-platform-tools@27.0.0+12
-  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2
-  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > graphviz/libgvc6@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
 ✗ Medium severity vulnerability found in libcaca/libcaca0
   Description: Out-of-Bounds
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBCACA-1245155
@@ -699,7 +675,7 @@ Testing rzlamrr/dvstlab:focal...
 ✗ Medium severity vulnerability found in krb5/libkrb5-3
   Description: NULL Pointer Dereference
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-1533536
-  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3, ca-certificates-java@20190405ubuntu1, cmake@3.16.3-1ubuntu1, git@1:2.25.1-1ubuntu3.1, lsb/lsb-core@11.1.0ubuntu2, software-properties/software-properties-common@0.98.9.5, meta-common-packages@meta
+  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3, ca-certificates-java@20190405ubuntu1, cmake@3.16.3-1ubuntu1, git@1:2.25.1-1ubuntu3.2, lsb/lsb-core@11.1.0ubuntu2, software-properties/software-properties-common@0.98.9.5, meta-common-packages@meta
   From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > krb5/libkrb5-3@1.17-6ubuntu4.1
   From: ca-certificates-java@20190405ubuntu1 > openjdk-8/openjdk-8-jre-headless@8u292-b10-0ubuntu1~20.04 > cups/libcups2@2.3.1-9ubuntu1.1 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1
   From: cmake@3.16.3-1ubuntu1 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1
@@ -729,9 +705,9 @@ Testing rzlamrr/dvstlab:focal...
 ✗ Medium severity vulnerability found in git/git-man
   Description: CVE-2021-40330
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GIT-1582289
-  Introduced through: git@1:2.25.1-1ubuntu3.1
-  From: git@1:2.25.1-1ubuntu3.1 > git/git-man@1:2.25.1-1ubuntu3.1
-  From: git@1:2.25.1-1ubuntu3.1
+  Introduced through: git@1:2.25.1-1ubuntu3.2
+  From: git@1:2.25.1-1ubuntu3.2 > git/git-man@1:2.25.1-1ubuntu3.2
+  From: git@1:2.25.1-1ubuntu3.2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
 ✗ Medium severity vulnerability found in gcc-defaults/cpp
@@ -762,14 +738,6 @@ Testing rzlamrr/dvstlab:focal...
   From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-system-core/fastboot@1:8.1.0+r23-5ubuntu2 > android-platform-system-extras/android-libf2fs-utils@8.1.0+r23-2 > f2fs-tools/libf2fs-format4@1.11.0-1.1ubuntu1
   From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > f2fs-tools@1.11.0-1.1ubuntu1 > f2fs-tools/libf2fs5@1.11.0-1.1ubuntu1
   and 3 more...
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
-✗ Medium severity vulnerability found in cpio
-  Description: Integer Overflow or Wraparound
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-CPIO-1537785
-  Introduced through: lsb/lsb-core@11.1.0ubuntu2
-  From: lsb/lsb-core@11.1.0ubuntu2 > cpio@2.13+dfsg-2
-  From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > cpio@2.13+dfsg-2
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in commons-io/libcommons-io-java
@@ -803,7 +771,7 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 738 dependencies for known issues, found 89 issues.
+Tested 738 dependencies for known issues, found 85 issues.
 
 According to our scan, you are currently using the most secure version of the selected base image
 
