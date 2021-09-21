@@ -238,6 +238,7 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: meta-common-packages@meta
   From: meta-common-packages@meta > libgcrypt20@1.8.5-5ubuntu1
   Image layer: Introduced by your base image (ubuntu:20.04)
+  Fixed in: 1.8.5-5ubuntu1.1
 
 ✗ Low severity vulnerability found in libcroco/libcroco3
   Description: Out-of-Bounds
@@ -259,7 +260,7 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3, ca-certificates-java@20190405ubuntu1, cmake@3.16.3-1ubuntu1, git@1:2.25.1-1ubuntu3.2, lsb/lsb-core@11.1.0ubuntu2, software-properties/software-properties-common@0.98.9.5, meta-common-packages@meta
   From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > krb5/libkrb5-3@1.17-6ubuntu4.1
   From: ca-certificates-java@20190405ubuntu1 > openjdk-8/openjdk-8-jre-headless@8u292-b10-0ubuntu1~20.04 > cups/libcups2@2.3.1-9ubuntu1.1 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1
-  From: cmake@3.16.3-1ubuntu1 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1
+  From: cmake@3.16.3-1ubuntu1 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1
   and 9 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
@@ -474,7 +475,7 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: meta-common-packages@meta, software-properties/software-properties-common@0.98.9.5
   From: meta-common-packages@meta > dbus/libdbus-1-3@1.12.16-2ubuntu2.1
   From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > dbus@1.12.16-2ubuntu2.1
-  From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > systemd/libpam-systemd@245.4-4ubuntu3.11 > dbus@1.12.16-2ubuntu2.1
+  From: software-properties/software-properties-common@0.98.9.5 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > systemd/libpam-systemd@245.4-4ubuntu3.13 > dbus@1.12.16-2ubuntu2.1
   and 2 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -616,6 +617,15 @@ Testing rzlamrr/dvstlab:focal...
   From: wget@1.20.3-1ubuntu1
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
+✗ Medium severity vulnerability found in tiff/libtiff5
+  Description: CVE-2020-19143
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-TIFF-1584177
+  Introduced through: imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.4, android-sdk-meta/android-sdk-platform-tools@27.0.0+12, openjdk-8/openjdk-8-jdk@8u292-b10-0ubuntu1~20.04
+  From: imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/imagemagick-6.q16@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/libmagickcore-6.q16-6@8:6.9.10.23+dfsg-2.1ubuntu11.4 > tiff/libtiff5@4.1.0+git191117-2ubuntu0.20.04.1
+  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2.1 > tiff/libtiff5@4.1.0+git191117-2ubuntu0.20.04.1
+  From: openjdk-8/openjdk-8-jdk@8u292-b10-0ubuntu1~20.04 > openjdk-8/openjdk-8-jre@8u292-b10-0ubuntu1~20.04 > gtk+2.0/libgtk2.0-0@2.24.32-4ubuntu4 > gdk-pixbuf/libgdk-pixbuf2.0-0@2.40.0+dfsg-3ubuntu0.2 > tiff/libtiff5@4.1.0+git191117-2ubuntu0.20.04.1
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
+
 ✗ Medium severity vulnerability found in sqlite3
   Description: Out-of-bounds Read
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-581593
@@ -644,6 +654,14 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04
   From: openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04
   Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Medium severity vulnerability found in libgcrypt20
+  Description: Use of a Broken or Risky Cryptographic Algorithm
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGCRYPT20-1583851
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > libgcrypt20@1.8.5-5ubuntu1
+  Image layer: Introduced by your base image (ubuntu:20.04)
+  Fixed in: 1.8.5-5ubuntu1.1
 
 ✗ Medium severity vulnerability found in libcaca/libcaca0
   Description: Out-of-Bounds
@@ -678,7 +696,7 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3, ca-certificates-java@20190405ubuntu1, cmake@3.16.3-1ubuntu1, git@1:2.25.1-1ubuntu3.2, lsb/lsb-core@11.1.0ubuntu2, software-properties/software-properties-common@0.98.9.5, meta-common-packages@meta
   From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > krb5/libkrb5-3@1.17-6ubuntu4.1
   From: ca-certificates-java@20190405ubuntu1 > openjdk-8/openjdk-8-jre-headless@8u292-b10-0ubuntu1~20.04 > cups/libcups2@2.3.1-9ubuntu1.1 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1
-  From: cmake@3.16.3-1ubuntu1 > curl/libcurl4@7.68.0-1ubuntu2.6 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1
+  From: cmake@3.16.3-1ubuntu1 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1
   and 9 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
@@ -702,12 +720,14 @@ Testing rzlamrr/dvstlab:focal...
   and 4 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
-✗ Medium severity vulnerability found in git/git-man
-  Description: CVE-2021-40330
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GIT-1582289
-  Introduced through: git@1:2.25.1-1ubuntu3.2
-  From: git@1:2.25.1-1ubuntu3.2 > git/git-man@1:2.25.1-1ubuntu3.2
-  From: git@1:2.25.1-1ubuntu3.2
+✗ Medium severity vulnerability found in imagemagick/imagemagick-6-common
+  Description: Exposure of Resource to Wrong Sphere
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-IMAGEMAGICK-1585024
+  Introduced through: imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.4
+  From: imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/imagemagick-6.q16@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/libmagickcore-6.q16-6@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/imagemagick-6-common@8:6.9.10.23+dfsg-2.1ubuntu11.4
+  From: imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/imagemagick-6.q16@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/libmagickwand-6.q16-6@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/imagemagick-6-common@8:6.9.10.23+dfsg-2.1ubuntu11.4
+  From: imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/imagemagick-6.q16@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/libmagickcore-6.q16-6@8:6.9.10.23+dfsg-2.1ubuntu11.4
+  and 4 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
 ✗ Medium severity vulnerability found in gcc-defaults/cpp
@@ -771,7 +791,7 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 738 dependencies for known issues, found 85 issues.
+Tested 738 dependencies for known issues, found 87 issues.
 
 According to our scan, you are currently using the most secure version of the selected base image
 
