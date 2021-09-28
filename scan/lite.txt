@@ -206,6 +206,16 @@ Testing rzlamrr/dvstlab:lite...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in binutils/binutils-common
+  Description: Out-of-Bounds
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-BINUTILS-1297570
+  Introduced through: gcc-defaults/gcc@4:9.3.0-1ubuntu2
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/libbinutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
+  and 7 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Low severity vulnerability found in binutils/binutils-common
   Description: Allocation of Resources Without Limits or Throttling
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-BINUTILS-583560
   Introduced through: gcc-defaults/gcc@4:9.3.0-1ubuntu2
@@ -307,7 +317,7 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 32 issues.
+Tested 221 dependencies for known issues, found 33 issues.
 
 According to our scan, you are currently using the most secure version of the selected base image
 
