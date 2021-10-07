@@ -103,9 +103,9 @@ Testing rzlamrr/dvstlab:focal...
   Description: HTTP Request Smuggling
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PYTHON38-1075582
   Introduced through: lsb/lsb-core@11.1.0ubuntu2, python3-defaults/python3-dev@3.8.2-0ubuntu2
-  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04 > python3.8/python3.8-minimal@3.8.10-0ubuntu1~20.04 > python3.8/libpython3.8-minimal@3.8.10-0ubuntu1~20.04
-  From: lsb/lsb-core@11.1.0ubuntu2 > mailutils@1:3.7-2.1 > mailutils/libmailutils6@1:3.7-2.1 > python3.8/libpython3.8@3.8.10-0ubuntu1~20.04 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04 > python3.8/libpython3.8-minimal@3.8.10-0ubuntu1~20.04
-  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04
+  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.1 > python3.8/python3.8-minimal@3.8.10-0ubuntu1~20.04.1 > python3.8/libpython3.8-minimal@3.8.10-0ubuntu1~20.04.1
+  From: lsb/lsb-core@11.1.0ubuntu2 > mailutils@1:3.7-2.1 > mailutils/libmailutils6@1:3.7-2.1 > python3.8/libpython3.8@3.8.10-0ubuntu1~20.04.1 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.1 > python3.8/libpython3.8-minimal@3.8.10-0ubuntu1~20.04.1
+  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.1
   and 14 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -231,14 +231,6 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: android-sdk-meta/android-sdk-platform-tools@27.0.0+12
   From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2.1 > libjpeg8-empty/libjpeg8@8c-2ubuntu8 > libjpeg-turbo/libjpeg-turbo8@2.0.3-0ubuntu1.20.04.1
   Image layer: Introduced by your base image (ubuntu:20.04)
-
-✗ Low severity vulnerability found in libgcrypt20
-  Description: Information Exposure
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGCRYPT20-1297919
-  Introduced through: meta-common-packages@meta
-  From: meta-common-packages@meta > libgcrypt20@1.8.5-5ubuntu1
-  Image layer: Introduced by your base image (ubuntu:20.04)
-  Fixed in: 1.8.5-5ubuntu1.1
 
 ✗ Low severity vulnerability found in libcroco/libcroco3
   Description: Out-of-Bounds
@@ -635,6 +627,16 @@ Testing rzlamrr/dvstlab:focal...
   From: meta-common-packages@meta > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: Introduced by your base image (ubuntu:20.04)
 
+✗ Medium severity vulnerability found in openssh/openssh-client
+  Description: Improper Privilege Management
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENSSH-1726887
+  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
 ✗ Medium severity vulnerability found in openjdk-lts/openjdk-11-jre-headless
   Description: CVE-2021-2388
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENJDKLTS-1323600
@@ -656,13 +658,13 @@ Testing rzlamrr/dvstlab:focal...
   From: openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04
   Image layer: Introduced by your base image (ubuntu:20.04)
 
-✗ Medium severity vulnerability found in libgcrypt20
-  Description: Use of a Broken or Risky Cryptographic Algorithm
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGCRYPT20-1583851
-  Introduced through: meta-common-packages@meta
-  From: meta-common-packages@meta > libgcrypt20@1.8.5-5ubuntu1
+✗ Medium severity vulnerability found in libgd2/libgd3
+  Description: Out-of-bounds Read
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBGD2-1583941
+  Introduced through: android-sdk-meta/android-sdk-platform-tools@27.0.0+12
+  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2.1
+  From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > android-platform-art/dmtracedump@8.1.0+r23-3 > graphviz@2.42.2-3build2 > graphviz/libgvc6@2.42.2-3build2 > libgd2/libgd3@2.2.5-5.2ubuntu2.1
   Image layer: Introduced by your base image (ubuntu:20.04)
-  Fixed in: 1.8.5-5ubuntu1.1
 
 ✗ Medium severity vulnerability found in libcaca/libcaca0
   Description: Out-of-Bounds
@@ -761,13 +763,6 @@ Testing rzlamrr/dvstlab:focal...
   and 3 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
-✗ Medium severity vulnerability found in commons-io/libcommons-io-java
-  Description: Directory Traversal
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-COMMONSIO-1245161
-  Introduced through: maven@3.6.3-1
-  From: maven@3.6.3-1 > maven/libmaven3-core-java@3.6.3-1 > maven-shared-utils/libmaven-shared-utils-java@3.3.0-1 > commons-io/libcommons-io-java@2.6-2
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
-
 ✗ Medium severity vulnerability found in axel
   Description: Improper Certificate Validation
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-AXEL-609615
@@ -792,7 +787,7 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 738 dependencies for known issues, found 87 issues.
+Tested 738 dependencies for known issues, found 86 issues.
 
 According to our scan, you are currently using the most secure version of the selected base image
 
