@@ -43,28 +43,8 @@ Testing rzlamrr/dvstlab:focal...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in rpm/librpmio8
-  Description: CVE-2021-20248
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-RPM-1086010
-  Introduced through: lsb/lsb-core@11.1.0ubuntu2
-  From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
-  From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/debugedit@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
-  From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/librpmbuild8@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
-  and 17 more...
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
-✗ Low severity vulnerability found in rpm/librpmio8
   Description: Improper Verification of Cryptographic Signature
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-RPM-1086090
-  Introduced through: lsb/lsb-core@11.1.0ubuntu2
-  From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
-  From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/debugedit@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
-  From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/librpmbuild8@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
-  and 17 more...
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
-✗ Low severity vulnerability found in rpm/librpmio8
-  Description: CVE-2021-20249
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-RPM-1086124
   Introduced through: lsb/lsb-core@11.1.0ubuntu2
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
   From: lsb/lsb-core@11.1.0ubuntu2 > alien@8.95 > rpm@4.14.2.1+dfsg1-1build2 > rpm/debugedit@4.14.2.1+dfsg1-1build2 > rpm/librpmio8@4.14.2.1+dfsg1-1build2
@@ -183,6 +163,16 @@ Testing rzlamrr/dvstlab:focal...
 ✗ Low severity vulnerability found in openssh/openssh-client
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENSSH-1047872
+  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Low severity vulnerability found in openssh/openssh-client
+  Description: Improper Privilege Management
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENSSH-1726887
   Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3
   From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
   From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
@@ -627,16 +617,6 @@ Testing rzlamrr/dvstlab:focal...
   From: meta-common-packages@meta > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: Introduced by your base image (ubuntu:20.04)
 
-✗ Medium severity vulnerability found in openssh/openssh-client
-  Description: Improper Privilege Management
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENSSH-1726887
-  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  and 3 more...
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
 ✗ Medium severity vulnerability found in openjdk-lts/openjdk-11-jre-headless
   Description: CVE-2021-2388
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENJDKLTS-1323600
@@ -787,7 +767,7 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 738 dependencies for known issues, found 86 issues.
+Tested 738 dependencies for known issues, found 84 issues.
 
 According to our scan, you are currently using the most secure version of the selected base image
 

@@ -73,6 +73,16 @@ Testing rzlamrr/dvstlab:lite...
   and 3 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
+✗ Low severity vulnerability found in openssh/openssh-client
+  Description: Improper Privilege Management
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENSSH-1726887
+  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
 ✗ Low severity vulnerability found in libtasn1-6
   Description: Resource Management Errors
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBTASN16-578037
@@ -256,16 +266,6 @@ Testing rzlamrr/dvstlab:lite...
   From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.1 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
-
-✗ Medium severity vulnerability found in openssh/openssh-client
-  Description: Improper Privilege Management
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENSSH-1726887
-  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  and 3 more...
-  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in krb5/libkrb5support0
   Description: NULL Pointer Dereference
