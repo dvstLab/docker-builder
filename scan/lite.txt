@@ -277,6 +277,13 @@ Testing rzlamrr/dvstlab:lite...
   and 9 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
+✗ Medium severity vulnerability found in icu/libicu66
+  Description: Double Free
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-ICU-1729897
+  Introduced through: libxml2@2.9.10+dfsg-5ubuntu0.20.04.1
+  From: libxml2@2.9.10+dfsg-5ubuntu0.20.04.1 > icu/libicu66@66.1-2ubuntu2
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+
 ✗ Medium severity vulnerability found in gcc-defaults/cpp
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GCCDEFAULTS-584255
@@ -305,7 +312,15 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 32 issues.
+Tested 221 dependencies for known issues, found 33 issues.
 
-According to our scan, you are currently using the most secure version of the selected base image
+Base Image    Vulnerabilities  Severity
+ubuntu:20.04  14               0 critical, 0 high, 0 medium, 14 low
+
+Recommendations for base image upgrade:
+
+Major upgrades
+Base Image              Vulnerabilities  Severity
+ubuntu:impish-20211015  10               0 critical, 0 high, 0 medium, 10 low
+
 

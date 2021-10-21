@@ -111,9 +111,9 @@ Testing rzlamrr/dvstlab:focal...
   Description: Uncontrolled Recursion
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PCRE3-580031
   Introduced through: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5, meta-common-packages@meta
-  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre16-3@2:8.39-12build1
-  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre32-3@2:8.39-12build1
-  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcrecpp0v5@2:8.39-12build1
+  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.12 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre16-3@2:8.39-12build1
+  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.12 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre32-3@2:8.39-12build1
+  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.12 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcrecpp0v5@2:8.39-12build1
   and 2 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -121,9 +121,9 @@ Testing rzlamrr/dvstlab:focal...
   Description: Out-of-bounds Read
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PCRE3-581164
   Introduced through: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5, meta-common-packages@meta
-  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre16-3@2:8.39-12build1
-  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre32-3@2:8.39-12build1
-  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcrecpp0v5@2:8.39-12build1
+  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.12 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre16-3@2:8.39-12build1
+  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.12 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre32-3@2:8.39-12build1
+  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.12 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcrecpp0v5@2:8.39-12build1
   and 2 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -131,9 +131,9 @@ Testing rzlamrr/dvstlab:focal...
   Description: Integer Overflow or Wraparound
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PCRE3-583594
   Introduced through: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5, meta-common-packages@meta
-  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre16-3@2:8.39-12build1
-  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre32-3@2:8.39-12build1
-  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.11 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcrecpp0v5@2:8.39-12build1
+  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.12 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre16-3@2:8.39-12build1
+  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.12 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcre32-3@2:8.39-12build1
+  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > pulseaudio/libpulse-dev@1:13.99.1-1ubuntu3.12 > glib2.0/libglib2.0-dev@2.64.6-1~ubuntu20.04.4 > pcre3/libpcre3-dev@2:8.39-12build1 > pcre3/libpcrecpp0v5@2:8.39-12build1
   and 2 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -448,7 +448,7 @@ Testing rzlamrr/dvstlab:focal...
   Description: Out-of-bounds Read
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-FLAC-1053005
   Introduced through: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5
-  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libsdl1.2/libsdl1.2debian@1.2.15+dfsg2-5 > pulseaudio/libpulse0@1:13.99.1-1ubuntu3.11 > libsndfile/libsndfile1@1.0.28-7ubuntu0.1 > flac/libflac8@1.3.3-1build1
+  From: libsdl1.2/libsdl1.2-dev@1.2.15+dfsg2-5 > libsdl1.2/libsdl1.2debian@1.2.15+dfsg2-5 > pulseaudio/libpulse0@1:13.99.1-1ubuntu3.12 > libsndfile/libsndfile1@1.0.28-7ubuntu0.1 > flac/libflac8@1.3.3-1build1
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in dbus/libdbus-1-3
@@ -713,6 +713,13 @@ Testing rzlamrr/dvstlab:focal...
   and 4 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
+✗ Medium severity vulnerability found in icu/libicu66
+  Description: Double Free
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-ICU-1729897
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > icu/libicu66@66.1-2ubuntu2
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
 ✗ Medium severity vulnerability found in gcc-defaults/cpp
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GCCDEFAULTS-584255
@@ -767,7 +774,15 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 738 dependencies for known issues, found 84 issues.
+Tested 738 dependencies for known issues, found 85 issues.
 
-According to our scan, you are currently using the most secure version of the selected base image
+Base Image    Vulnerabilities  Severity
+ubuntu:20.04  14               0 critical, 0 high, 0 medium, 14 low
+
+Recommendations for base image upgrade:
+
+Major upgrades
+Base Image              Vulnerabilities  Severity
+ubuntu:impish-20211015  10               0 critical, 0 high, 0 medium, 10 low
+
 
