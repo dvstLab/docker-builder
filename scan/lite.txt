@@ -101,6 +101,16 @@ Testing rzlamrr/dvstlab:lite...
   and 9 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
+✗ Low severity vulnerability found in heimdal/libasn1-8-heimdal
+  Description: NULL Pointer Dereference
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-HEIMDAL-1766738
+  Introduced through: curl@7.68.0-1ubuntu2.7, meta-common-packages@meta
+  From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libasn1-8-heimdal@7.7.0+dfsg-1ubuntu1
+  From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libhcrypto4-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libasn1-8-heimdal@7.7.0+dfsg-1ubuntu1
+  From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libasn1-8-heimdal@7.7.0+dfsg-1ubuntu1
+  and 17 more...
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+
 ✗ Low severity vulnerability found in glibc/libc-bin
   Description: Reachable Assertion
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1048386
@@ -195,32 +205,12 @@ Testing rzlamrr/dvstlab:lite...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
 ✗ Low severity vulnerability found in binutils/binutils-common
-  Description: Improper Input Validation
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-BINUTILS-1244927
-  Introduced through: gcc-defaults/gcc@4:9.3.0-1ubuntu2
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/libbinutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
-  and 7 more...
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
-✗ Low severity vulnerability found in binutils/binutils-common
-  Description: Out-of-Bounds
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-BINUTILS-1297570
-  Introduced through: gcc-defaults/gcc@4:9.3.0-1ubuntu2
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/libbinutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
-  and 7 more...
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
-✗ Low severity vulnerability found in binutils/binutils-common
   Description: Allocation of Resources Without Limits or Throttling
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-BINUTILS-583560
   Introduced through: gcc-defaults/gcc@4:9.3.0-1ubuntu2
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/libbinutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.3 > binutils/binutils-common@2.34-6ubuntu1.3
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.3 > binutils/libbinutils@2.34-6ubuntu1.3 > binutils/binutils-common@2.34-6ubuntu1.3
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.3 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.3 > binutils/binutils-common@2.34-6ubuntu1.3
   and 7 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -228,9 +218,9 @@ Testing rzlamrr/dvstlab:lite...
   Description: Improper Input Validation
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-BINUTILS-584269
   Introduced through: gcc-defaults/gcc@4:9.3.0-1ubuntu2
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/libbinutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.3 > binutils/binutils-common@2.34-6ubuntu1.3
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.3 > binutils/libbinutils@2.34-6ubuntu1.3 > binutils/binutils-common@2.34-6ubuntu1.3
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.3 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.3 > binutils/binutils-common@2.34-6ubuntu1.3
   and 7 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -238,9 +228,9 @@ Testing rzlamrr/dvstlab:lite...
   Description: Missing Release of Resource after Effective Lifetime
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-BINUTILS-842774
   Introduced through: gcc-defaults/gcc@4:9.3.0-1ubuntu2
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/libbinutils@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
-  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.1 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.1 > binutils/binutils-common@2.34-6ubuntu1.1
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.3 > binutils/binutils-common@2.34-6ubuntu1.3
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.3 > binutils/libbinutils@2.34-6ubuntu1.3 > binutils/binutils-common@2.34-6ubuntu1.3
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > binutils@2.34-6ubuntu1.3 > binutils/binutils-x86-64-linux-gnu@2.34-6ubuntu1.3 > binutils/binutils-common@2.34-6ubuntu1.3
   and 7 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -312,7 +302,7 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 33 issues.
+Tested 221 dependencies for known issues, found 32 issues.
 
 Base Image    Vulnerabilities  Severity
 ubuntu:20.04  14               0 critical, 0 high, 0 medium, 14 low
@@ -320,7 +310,7 @@ ubuntu:20.04  14               0 critical, 0 high, 0 medium, 14 low
 Recommendations for base image upgrade:
 
 Major upgrades
-Base Image              Vulnerabilities  Severity
-ubuntu:impish-20211015  10               0 critical, 0 high, 0 medium, 10 low
+Base Image    Vulnerabilities  Severity
+ubuntu:devel  10               0 critical, 0 high, 0 medium, 10 low
 
 
