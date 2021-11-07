@@ -162,6 +162,16 @@ Testing rzlamrr/dvstlab:lite...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in glibc/libc-bin
+  Description: Use After Free
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1297554
+  Introduced through: glibc/libc-bin@2.31-0ubuntu9.2, glibc/libc6-dev@2.31-0ubuntu9.2, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4, meta-common-packages@meta
+  From: glibc/libc-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2
+  and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Low severity vulnerability found in glibc/libc-bin
   Description: Improper Input Validation
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-576349
   Introduced through: glibc/libc-bin@2.31-0ubuntu9.2, glibc/libc6-dev@2.31-0ubuntu9.2, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4, meta-common-packages@meta
@@ -274,6 +284,26 @@ Testing rzlamrr/dvstlab:lite...
   From: libxml2@2.9.10+dfsg-5ubuntu0.20.04.1 > icu/libicu66@66.1-2ubuntu2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
+✗ Medium severity vulnerability found in glibc/libc-bin
+  Description: Integer Overflow or Wraparound
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1315365
+  Introduced through: glibc/libc-bin@2.31-0ubuntu9.2, glibc/libc6-dev@2.31-0ubuntu9.2, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4, meta-common-packages@meta
+  From: glibc/libc-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2
+  and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Medium severity vulnerability found in glibc/libc-bin
+  Description: NULL Pointer Dereference
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1564900
+  Introduced through: glibc/libc-bin@2.31-0ubuntu9.2, glibc/libc6-dev@2.31-0ubuntu9.2, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4, meta-common-packages@meta
+  From: glibc/libc-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2
+  and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
 ✗ Medium severity vulnerability found in gcc-defaults/cpp
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GCCDEFAULTS-584255
@@ -302,15 +332,15 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 32 issues.
+Tested 221 dependencies for known issues, found 35 issues.
 
 Base Image    Vulnerabilities  Severity
-ubuntu:20.04  14               0 critical, 0 high, 0 medium, 14 low
+ubuntu:20.04  17               0 critical, 0 high, 2 medium, 15 low
 
 Recommendations for base image upgrade:
 
 Major upgrades
-Base Image    Vulnerabilities  Severity
-ubuntu:devel  10               0 critical, 0 high, 0 medium, 10 low
+Base Image              Vulnerabilities  Severity
+ubuntu:impish-20211015  11               0 critical, 0 high, 1 medium, 10 low
 
 
