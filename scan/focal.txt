@@ -702,6 +702,13 @@ Testing rzlamrr/dvstlab:focal...
   From: meta-common-packages@meta > icu/libicu66@66.1-2ubuntu2
   Image layer: Introduced by your base image (ubuntu:20.04)
 
+✗ Medium severity vulnerability found in gmp/libgmp10
+  Description: CVE-2021-43618
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GMP-1921284
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > gmp/libgmp10@2:6.2.0+dfsg-4
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
 ✗ Medium severity vulnerability found in glibc/libc6-dev-i386
   Description: Integer Overflow or Wraparound
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1315365
@@ -776,15 +783,15 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 738 dependencies for known issues, found 85 issues.
+Tested 738 dependencies for known issues, found 86 issues.
 
 Base Image    Vulnerabilities  Severity
-ubuntu:20.04  17               0 critical, 0 high, 2 medium, 15 low
+ubuntu:20.04  18               0 critical, 0 high, 3 medium, 15 low
 
 Recommendations for base image upgrade:
 
 Major upgrades
 Base Image              Vulnerabilities  Severity
-ubuntu:impish-20211015  11               0 critical, 0 high, 1 medium, 10 low
+ubuntu:impish-20211015  12               0 critical, 0 high, 2 medium, 10 low
 
 

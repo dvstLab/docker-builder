@@ -284,6 +284,16 @@ Testing rzlamrr/dvstlab:lite...
   From: libxml2@2.9.10+dfsg-5ubuntu0.20.04.1 > icu/libicu66@66.1-2ubuntu2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
+✗ Medium severity vulnerability found in gmp/libgmp10
+  Description: CVE-2021-43618
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GMP-1921284
+  Introduced through: gmp/libgmp10@2:6.2.0+dfsg-4, apt@2.0.6, gcc-defaults/gcc@4:9.3.0-1ubuntu2, curl@7.68.0-1ubuntu2.7
+  From: gmp/libgmp10@2:6.2.0+dfsg-4
+  From: apt@2.0.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.6 > gmp/libgmp10@2:6.2.0+dfsg-4
+  From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > gmp/libgmp10@2:6.2.0+dfsg-4
+  and 6 more...
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+
 ✗ Medium severity vulnerability found in glibc/libc-bin
   Description: Integer Overflow or Wraparound
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1315365
@@ -332,15 +342,15 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 35 issues.
+Tested 221 dependencies for known issues, found 36 issues.
 
 Base Image    Vulnerabilities  Severity
-ubuntu:20.04  17               0 critical, 0 high, 2 medium, 15 low
+ubuntu:20.04  18               0 critical, 0 high, 3 medium, 15 low
 
 Recommendations for base image upgrade:
 
 Major upgrades
 Base Image              Vulnerabilities  Severity
-ubuntu:impish-20211015  11               0 critical, 0 high, 1 medium, 10 low
+ubuntu:impish-20211015  12               0 critical, 0 high, 2 medium, 10 low
 
 
