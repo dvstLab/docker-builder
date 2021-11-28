@@ -369,6 +369,13 @@ Testing rzlamrr/dvstlab:focal...
   From: lsb/lsb-core@11.1.0ubuntu2 > man-db@2.9.1-1 > groff/groff-base@1.22.4-4build1
   Image layer: Introduced by your base image (ubuntu:20.04)
 
+✗ Low severity vulnerability found in gmp/libgmp10
+  Description: CVE-2021-43618
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GMP-1921284
+  Introduced through: meta-common-packages@meta
+  From: meta-common-packages@meta > gmp/libgmp10@2:6.2.0+dfsg-4
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
 ✗ Low severity vulnerability found in glibc/libc6-dev-i386
   Description: Reachable Assertion
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1048386
@@ -613,8 +620,8 @@ Testing rzlamrr/dvstlab:focal...
 ✗ Medium severity vulnerability found in wget
   Description: Open Redirect
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-WGET-1278730
-  Introduced through: wget@1.20.3-1ubuntu1
-  From: wget@1.20.3-1ubuntu1
+  Introduced through: wget@1.20.3-1ubuntu2
+  From: wget@1.20.3-1ubuntu2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
 ✗ Medium severity vulnerability found in sqlite3
@@ -624,6 +631,16 @@ Testing rzlamrr/dvstlab:focal...
   From: android-sdk-meta/android-sdk-platform-tools@27.0.0+12 > sqlite3@3.31.1-4ubuntu0.2
   From: meta-common-packages@meta > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Medium severity vulnerability found in perl/perl-modules-5.30
+  Description: CVE-2020-16156
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PERL-1930907
+  Introduced through: autoconf@2.69-11.1, git@1:2.25.1-1ubuntu3.2, rename@1.10-1, lsb/lsb-core@11.1.0ubuntu2, meta-common-packages@meta
+  From: autoconf@2.69-11.1 > perl@5.30.0-9ubuntu0.2 > perl/perl-modules-5.30@5.30.0-9ubuntu0.2
+  From: autoconf@2.69-11.1 > perl@5.30.0-9ubuntu0.2 > perl/libperl5.30@5.30.0-9ubuntu0.2 > perl/perl-modules-5.30@5.30.0-9ubuntu0.2
+  From: autoconf@2.69-11.1 > perl@5.30.0-9ubuntu0.2 > perl/libperl5.30@5.30.0-9ubuntu0.2
+  and 8 more...
+  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
 ✗ Medium severity vulnerability found in openjdk-lts/openjdk-11-jre-headless
   Description: CVE-2021-2388
@@ -694,20 +711,6 @@ Testing rzlamrr/dvstlab:focal...
   From: imagemagick@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/imagemagick-6.q16@8:6.9.10.23+dfsg-2.1ubuntu11.4 > imagemagick/libmagickcore-6.q16-6@8:6.9.10.23+dfsg-2.1ubuntu11.4
   and 4 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
-
-✗ Medium severity vulnerability found in icu/libicu66
-  Description: Double Free
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-ICU-1729897
-  Introduced through: meta-common-packages@meta
-  From: meta-common-packages@meta > icu/libicu66@66.1-2ubuntu2
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
-✗ Medium severity vulnerability found in gmp/libgmp10
-  Description: CVE-2021-43618
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GMP-1921284
-  Introduced through: meta-common-packages@meta
-  From: meta-common-packages@meta > gmp/libgmp10@2:6.2.0+dfsg-4
-  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in glibc/libc6-dev-i386
   Description: Integer Overflow or Wraparound
@@ -786,12 +789,12 @@ Licenses:          enabled
 Tested 738 dependencies for known issues, found 86 issues.
 
 Base Image    Vulnerabilities  Severity
-ubuntu:20.04  18               0 critical, 0 high, 3 medium, 15 low
+ubuntu:20.04  19               0 critical, 0 high, 3 medium, 16 low
 
 Recommendations for base image upgrade:
 
 Major upgrades
 Base Image              Vulnerabilities  Severity
-ubuntu:impish-20211015  12               0 critical, 0 high, 2 medium, 10 low
+ubuntu:impish-20211015  13               0 critical, 0 high, 2 medium, 11 low
 
 
