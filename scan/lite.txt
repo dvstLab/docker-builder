@@ -277,6 +277,16 @@ Testing rzlamrr/dvstlab:lite...
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
 
+✗ Medium severity vulnerability found in python3.8/libpython3.8-stdlib
+  Description: CVE-2021-3737
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PYTHON38-1932959
+  Introduced through: python3-defaults/python3-dev@3.8.2-0ubuntu2
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/libpython3-dev@3.8.2-0ubuntu2 > python3.8/libpython3.8-dev@3.8.10-0ubuntu1~20.04.1 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.1
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.1
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.1 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.1
+  and 12 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
 ✗ Medium severity vulnerability found in perl/perl-modules-5.30
   Description: CVE-2020-16156
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PERL-1930907
@@ -345,7 +355,7 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 36 issues.
+Tested 221 dependencies for known issues, found 37 issues.
 
 Base Image    Vulnerabilities  Severity
 ubuntu:20.04  19               0 critical, 0 high, 3 medium, 16 low

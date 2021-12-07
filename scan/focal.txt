@@ -184,9 +184,9 @@ Testing rzlamrr/dvstlab:focal...
   Description: Allocation of Resources Without Limits or Throttling
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-NSS-1019588
   Introduced through: ca-certificates-java@20190405ubuntu1, openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04, lsb/lsb-core@11.1.0ubuntu2
-  From: ca-certificates-java@20190405ubuntu1 > nss/libnss3@2:3.49.1-1ubuntu1.5
-  From: openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04 > nss/libnss3@2:3.49.1-1ubuntu1.5
-  From: lsb/lsb-core@11.1.0ubuntu2 > lsb/lsb-security@11.1.0ubuntu2 > nss/libnss3@2:3.49.1-1ubuntu1.5
+  From: ca-certificates-java@20190405ubuntu1 > nss/libnss3@2:3.49.1-1ubuntu1.6
+  From: openjdk-lts/openjdk-11-jre-headless@11.0.11+9-0ubuntu2~20.04 > nss/libnss3@2:3.49.1-1ubuntu1.6
+  From: lsb/lsb-core@11.1.0ubuntu2 > lsb/lsb-security@11.1.0ubuntu2 > nss/libnss3@2:3.49.1-1ubuntu1.6
   and 2 more...
   Image layer: '/bin/sh -c apt-get update -qqy && apt-get install -y -q --no-install-recommends     apt-utils apt-transport-https python3-apt     lsb-core lsb-security ca-certificates systemd udev     git curl wget wput axel     binutils coreutils bsdmainutils util-linux patchutils libc6-dev     ssh openssl libssl-dev sshpass gnupg2 gpg     android-sdk-platform-tools squashfs-tools     openjdk-8-jdk ca-certificates-java     maven nodejs     python-all-dev python3-dev python3-requests     zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev     '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop     build-essential gcc gcc-multilib g++ g++-multilib     clang lld cmake automake autoconf     libxml2 libxml2-utils xsltproc expat re2c     ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5     file gawk xterm rename tree schedtool software-properties-common     dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp     python-is-python2 ninja-build libcrypt-dev     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives     && apt-get -qqy purge default-jre-headless'
 
@@ -632,6 +632,16 @@ Testing rzlamrr/dvstlab:focal...
   From: meta-common-packages@meta > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: Introduced by your base image (ubuntu:20.04)
 
+✗ Medium severity vulnerability found in python3.8/libpython3.8-minimal
+  Description: CVE-2021-3737
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PYTHON38-1932959
+  Introduced through: lsb/lsb-core@11.1.0ubuntu2, python3-defaults/python3-dev@3.8.2-0ubuntu2
+  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.1 > python3.8/python3.8-minimal@3.8.10-0ubuntu1~20.04.1 > python3.8/libpython3.8-minimal@3.8.10-0ubuntu1~20.04.1
+  From: lsb/lsb-core@11.1.0ubuntu2 > mailutils@1:3.7-2.1 > mailutils/libmailutils6@1:3.7-2.1 > python3.8/libpython3.8@3.8.10-0ubuntu1~20.04.1 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.1 > python3.8/libpython3.8-minimal@3.8.10-0ubuntu1~20.04.1
+  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.1
+  and 14 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
 ✗ Medium severity vulnerability found in perl/perl-modules-5.30
   Description: CVE-2020-16156
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PERL-1930907
@@ -786,7 +796,7 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 738 dependencies for known issues, found 86 issues.
+Tested 738 dependencies for known issues, found 87 issues.
 
 Base Image    Vulnerabilities  Severity
 ubuntu:20.04  19               0 critical, 0 high, 3 medium, 16 low
