@@ -8,7 +8,8 @@ Docker image:      rzlamrr/dvstlab:arch
 Platform:          linux/amd64
 Licenses:          enabled
 
-✓ Tested rzlamrr/dvstlab:arch for known issues, no vulnerable paths found.
+✔ Tested rzlamrr/dvstlab:arch for known issues, no vulnerable paths found.
 
 Note that we currently do not have vulnerability information for Arch unstable, which we detected in your image.
+
 

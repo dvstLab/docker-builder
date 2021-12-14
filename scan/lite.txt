@@ -8,7 +8,7 @@ Testing rzlamrr/dvstlab:lite...
   From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.1 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Low severity vulnerability found in sqlite3/libsqlite3-0
   Description: Information Exposure
@@ -17,7 +17,7 @@ Testing rzlamrr/dvstlab:lite...
   From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.1 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Low severity vulnerability found in shadow/passwd
   Description: Time-of-check Time-of-use (TOCTOU)
@@ -99,7 +99,7 @@ Testing rzlamrr/dvstlab:lite...
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libk5crypto3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   and 9 more...
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Low severity vulnerability found in heimdal/libasn1-8-heimdal
   Description: NULL Pointer Dereference
@@ -109,7 +109,7 @@ Testing rzlamrr/dvstlab:lite...
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libhcrypto4-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libasn1-8-heimdal@7.7.0+dfsg-1ubuntu1
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libasn1-8-heimdal@7.7.0+dfsg-1ubuntu1
   and 17 more...
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Low severity vulnerability found in gmp/libgmp10
   Description: CVE-2021-43618
@@ -119,7 +119,7 @@ Testing rzlamrr/dvstlab:lite...
   From: apt@2.0.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.6 > gmp/libgmp10@2:6.2.0+dfsg-4
   From: gcc-defaults/gcc@4:9.3.0-1ubuntu2 > gcc-9@9.3.0-17ubuntu1~20.04 > gmp/libgmp10@2:6.2.0+dfsg-4
   and 6 more...
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Low severity vulnerability found in glibc/libc-bin
   Description: Reachable Assertion
@@ -207,7 +207,7 @@ Testing rzlamrr/dvstlab:lite...
   Introduced through: git@1:2.25.1-1ubuntu3.2
   From: git@1:2.25.1-1ubuntu3.2 > git/git-man@1:2.25.1-1ubuntu3.2
   From: git@1:2.25.1-1ubuntu3.2
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Low severity vulnerability found in coreutils
   Description: Improper Input Validation
@@ -222,7 +222,7 @@ Testing rzlamrr/dvstlab:lite...
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-BISON-609742
   Introduced through: bison@2:3.5.1+dfsg-1
   From: bison@2:3.5.1+dfsg-1
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Low severity vulnerability found in binutils/binutils-common
   Description: Allocation of Resources Without Limits or Throttling
@@ -266,7 +266,7 @@ Testing rzlamrr/dvstlab:lite...
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-WGET-1278730
   Introduced through: wget@1.20.3-1ubuntu2
   From: wget@1.20.3-1ubuntu2
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Medium severity vulnerability found in sqlite3/libsqlite3-0
   Description: Out-of-bounds Read
@@ -275,7 +275,7 @@ Testing rzlamrr/dvstlab:lite...
   From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.1 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Medium severity vulnerability found in python3.8/libpython3.8-stdlib
   Description: CVE-2021-3737
@@ -295,7 +295,7 @@ Testing rzlamrr/dvstlab:lite...
   From: git@1:2.25.1-1ubuntu3.2 > perl@5.30.0-9ubuntu0.2 > perl/libperl5.30@5.30.0-9ubuntu0.2 > perl/perl-modules-5.30@5.30.0-9ubuntu0.2
   From: git@1:2.25.1-1ubuntu3.2 > perl@5.30.0-9ubuntu0.2 > perl/libperl5.30@5.30.0-9ubuntu0.2
   and 2 more...
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Medium severity vulnerability found in krb5/libkrb5support0
   Description: NULL Pointer Dereference
@@ -305,7 +305,7 @@ Testing rzlamrr/dvstlab:lite...
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libk5crypto3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   and 9 more...
-  Image layer: '/bin/sh -c apt-get update -qqy && apt-get install --no-install-recommends -y     bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev     libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd     && apt-get -y clean && apt-get -y autoremove     && rm -rf /var/lib/apt/lists     && rm -rf /var/cache/apt/archives'
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Medium severity vulnerability found in glibc/libc-bin
   Description: Integer Overflow or Wraparound
@@ -364,6 +364,22 @@ Recommendations for base image upgrade:
 
 Major upgrades
 Base Image              Vulnerabilities  Severity
-ubuntu:impish-20211015  13               0 critical, 0 high, 2 medium, 11 low
+ubuntu:impish-20211102  13               0 critical, 0 high, 2 medium, 11 low
 
+
+-------------------------------------------------------
+
+Testing rzlamrr/dvstlab:lite...
+
+Organization:      rzlamrr
+Package manager:   maven
+Target file:       /etc
+Project name:      rzlamrr/dvstlab:lite:/etc
+Docker image:      rzlamrr/dvstlab:lite
+Licenses:          enabled
+
+✔ Tested rzlamrr/dvstlab:lite for known issues, no vulnerable paths found.
+
+
+Tested 2 projects, 1 contained vulnerable paths.
 
