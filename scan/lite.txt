@@ -22,10 +22,10 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in shadow/passwd
   Description: Time-of-check Time-of-use (TOCTOU)
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SHADOW-577863
-  Introduced through: shadow/passwd@1:4.8.1-1ubuntu5.20.04.1, adduser@3.118ubuntu2, openssh/ssh@1:8.2p1-4ubuntu0.3, shadow/login@1:4.8.1-1ubuntu5.20.04.1, util-linux/mount@2.34-0.1ubuntu9.1
+  Introduced through: shadow/passwd@1:4.8.1-1ubuntu5.20.04.1, adduser@3.118ubuntu2, openssh/ssh@1:8.2p1-4ubuntu0.4, shadow/login@1:4.8.1-1ubuntu5.20.04.1, util-linux/mount@2.34-0.1ubuntu9.1
   From: shadow/passwd@1:4.8.1-1ubuntu5.20.04.1
   From: adduser@3.118ubuntu2 > shadow/passwd@1:4.8.1-1ubuntu5.20.04.1
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3 > shadow/passwd@1:4.8.1-1ubuntu5.20.04.1
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4 > shadow/passwd@1:4.8.1-1ubuntu5.20.04.1
   and 2 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -66,20 +66,20 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in openssh/openssh-client
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENSSH-1047872
-  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.4
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-server@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-server@1:8.2p1-4ubuntu0.4 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4
   and 3 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in openssh/openssh-client
   Description: Improper Privilege Management
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENSSH-1726887
-  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.4
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-server@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-server@1:8.2p1-4ubuntu0.4 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4
   and 3 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -94,7 +94,7 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in krb5/libkrb5support0
   Description: Integer Overflow or Wraparound
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-579303
-  Introduced through: curl@7.68.0-1ubuntu2.7, openssh/ssh@1:8.2p1-4ubuntu0.3, git@1:2.25.1-1ubuntu3.2
+  Introduced through: curl@7.68.0-1ubuntu2.7, openssh/ssh@1:8.2p1-4ubuntu0.4, git@1:2.25.1-1ubuntu3.2
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libk5crypto3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
@@ -212,9 +212,9 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in coreutils
   Description: Improper Input Validation
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-COREUTILS-583876
-  Introduced through: coreutils@8.30-3ubuntu2, openssh/ssh@1:8.2p1-4ubuntu0.3
+  Introduced through: coreutils@8.30-3ubuntu2, openssh/ssh@1:8.2p1-4ubuntu0.4
   From: coreutils@8.30-3ubuntu2
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > ucf@3.0038+nmu1 > coreutils@8.30-3ubuntu2
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-server@1:8.2p1-4ubuntu0.4 > ucf@3.0038+nmu1 > coreutils@8.30-3ubuntu2
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in bison
@@ -277,16 +277,6 @@ Testing rzlamrr/dvstlab:lite...
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
-✗ Medium severity vulnerability found in python3.8/libpython3.8-stdlib
-  Description: CVE-2021-3737
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PYTHON38-1932959
-  Introduced through: python3-defaults/python3-dev@3.8.2-0ubuntu2
-  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/libpython3-dev@3.8.2-0ubuntu2 > python3.8/libpython3.8-dev@3.8.10-0ubuntu1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.2
-  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.2
-  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.2
-  and 12 more...
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
 ✗ Medium severity vulnerability found in perl/perl-modules-5.30
   Description: CVE-2020-16156
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PERL-1930907
@@ -300,7 +290,7 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Medium severity vulnerability found in krb5/libkrb5support0
   Description: NULL Pointer Dereference
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-1533536
-  Introduced through: curl@7.68.0-1ubuntu2.7, openssh/ssh@1:8.2p1-4ubuntu0.3, git@1:2.25.1-1ubuntu3.2
+  Introduced through: curl@7.68.0-1ubuntu2.7, openssh/ssh@1:8.2p1-4ubuntu0.4, git@1:2.25.1-1ubuntu3.2
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libk5crypto3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1 > krb5/libkrb5support0@1.17-6ubuntu4.1
@@ -355,7 +345,7 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 37 issues.
+Tested 221 dependencies for known issues, found 36 issues.
 
 Base Image    Vulnerabilities  Severity
 ubuntu:20.04  19               0 critical, 0 high, 3 medium, 16 low
@@ -364,7 +354,7 @@ Recommendations for base image upgrade:
 
 Major upgrades
 Base Image              Vulnerabilities  Severity
-ubuntu:impish-20210928  13               0 critical, 0 high, 2 medium, 11 low
+ubuntu:impish-20211015  13               0 critical, 0 high, 2 medium, 11 low
 
 
 -------------------------------------------------------

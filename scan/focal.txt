@@ -163,20 +163,20 @@ Testing rzlamrr/dvstlab:focal...
 ✗ Low severity vulnerability found in openssh/openssh-client
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENSSH-1047872
-  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.4
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-server@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-server@1:8.2p1-4ubuntu0.4 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4
   and 3 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in openssh/openssh-client
   Description: Improper Privilege Management
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-OPENSSH-1726887
-  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.3 > openssh/openssh-client@1:8.2p1-4ubuntu0.3
+  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.4
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-server@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-server@1:8.2p1-4ubuntu0.4 > openssh/openssh-sftp-server@1:8.2p1-4ubuntu0.4 > openssh/openssh-client@1:8.2p1-4ubuntu0.4
   and 3 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -247,8 +247,8 @@ Testing rzlamrr/dvstlab:focal...
 ✗ Low severity vulnerability found in krb5/libkrb5-3
   Description: Integer Overflow or Wraparound
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-579303
-  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3, ca-certificates-java@20190405ubuntu1, cmake@3.16.3-1ubuntu1, git@1:2.25.1-1ubuntu3.2, lsb/lsb-core@11.1.0ubuntu2, software-properties/software-properties-common@0.99.9.8, meta-common-packages@meta
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > krb5/libkrb5-3@1.17-6ubuntu4.1
+  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.4, ca-certificates-java@20190405ubuntu1, cmake@3.16.3-1ubuntu1, git@1:2.25.1-1ubuntu3.2, lsb/lsb-core@11.1.0ubuntu2, software-properties/software-properties-common@0.99.9.8, meta-common-packages@meta
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-server@1:8.2p1-4ubuntu0.4 > krb5/libkrb5-3@1.17-6ubuntu4.1
   From: ca-certificates-java@20190405ubuntu1 > openjdk-8/openjdk-8-jre-headless@8u312-b07-0ubuntu1~20.04 > cups/libcups2@2.3.1-9ubuntu1.1 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1
   From: cmake@3.16.3-1ubuntu1 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1
   and 9 more...
@@ -492,7 +492,7 @@ Testing rzlamrr/dvstlab:focal...
   Introduced through: meta-common-packages@meta, software-properties/software-properties-common@0.99.9.8
   From: meta-common-packages@meta > dbus/libdbus-1-3@1.12.16-2ubuntu2.1
   From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > dbus@1.12.16-2ubuntu2.1
-  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > systemd/libpam-systemd@245.4-4ubuntu3.13 > dbus@1.12.16-2ubuntu2.1
+  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > systemd/libpam-systemd@245.4-4ubuntu3.14 > dbus@1.12.16-2ubuntu2.1
   and 2 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -632,16 +632,6 @@ Testing rzlamrr/dvstlab:focal...
   From: meta-common-packages@meta > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: Introduced by your base image (ubuntu:20.04)
 
-✗ Medium severity vulnerability found in python3.8/libpython3.8-minimal
-  Description: CVE-2021-3737
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PYTHON38-1932959
-  Introduced through: lsb/lsb-core@11.1.0ubuntu2, python3-defaults/python3-dev@3.8.2-0ubuntu2
-  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.2 > python3.8/python3.8-minimal@3.8.10-0ubuntu1~20.04.2 > python3.8/libpython3.8-minimal@3.8.10-0ubuntu1~20.04.2
-  From: lsb/lsb-core@11.1.0ubuntu2 > mailutils@1:3.7-2.1 > mailutils/libmailutils6@1:3.7-2.1 > python3.8/libpython3.8@3.8.10-0ubuntu1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.2 > python3.8/libpython3.8-minimal@3.8.10-0ubuntu1~20.04.2
-  From: lsb/lsb-core@11.1.0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.2
-  and 14 more...
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
 ✗ Medium severity vulnerability found in perl/perl-modules-5.30
   Description: CVE-2020-16156
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PERL-1930907
@@ -664,8 +654,8 @@ Testing rzlamrr/dvstlab:focal...
 ✗ Medium severity vulnerability found in krb5/libkrb5-3
   Description: NULL Pointer Dereference
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-KRB5-1533536
-  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.3, ca-certificates-java@20190405ubuntu1, cmake@3.16.3-1ubuntu1, git@1:2.25.1-1ubuntu3.2, lsb/lsb-core@11.1.0ubuntu2, software-properties/software-properties-common@0.99.9.8, meta-common-packages@meta
-  From: openssh/ssh@1:8.2p1-4ubuntu0.3 > openssh/openssh-server@1:8.2p1-4ubuntu0.3 > krb5/libkrb5-3@1.17-6ubuntu4.1
+  Introduced through: openssh/ssh@1:8.2p1-4ubuntu0.4, ca-certificates-java@20190405ubuntu1, cmake@3.16.3-1ubuntu1, git@1:2.25.1-1ubuntu3.2, lsb/lsb-core@11.1.0ubuntu2, software-properties/software-properties-common@0.99.9.8, meta-common-packages@meta
+  From: openssh/ssh@1:8.2p1-4ubuntu0.4 > openssh/openssh-server@1:8.2p1-4ubuntu0.4 > krb5/libkrb5-3@1.17-6ubuntu4.1
   From: ca-certificates-java@20190405ubuntu1 > openjdk-8/openjdk-8-jre-headless@8u312-b07-0ubuntu1~20.04 > cups/libcups2@2.3.1-9ubuntu1.1 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1 > krb5/libkrb5-3@1.17-6ubuntu4.1
   From: cmake@3.16.3-1ubuntu1 > curl/libcurl4@7.68.0-1ubuntu2.7 > krb5/libgssapi-krb5-2@1.17-6ubuntu4.1
   and 9 more...
@@ -775,7 +765,7 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 738 dependencies for known issues, found 84 issues.
+Tested 738 dependencies for known issues, found 83 issues.
 
 Base Image    Vulnerabilities  Severity
 ubuntu:20.04  19               0 critical, 0 high, 3 medium, 16 low
@@ -784,7 +774,7 @@ Recommendations for base image upgrade:
 
 Major upgrades
 Base Image              Vulnerabilities  Severity
-ubuntu:impish-20210928  13               0 critical, 0 high, 2 medium, 11 low
+ubuntu:impish-20211015  13               0 critical, 0 high, 2 medium, 11 low
 
 
 -------------------------------------------------------
