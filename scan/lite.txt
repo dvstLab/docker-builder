@@ -84,7 +84,7 @@ Testing rzlamrr/dvstlab:lite...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in libtasn1-6
-  Description: Resource Management Errors
+  Description: CVE-2018-1000654
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBTASN16-578037
   Introduced through: libtasn1-6@4.16.0-2, apt@2.0.6
   From: libtasn1-6@4.16.0-2
@@ -112,7 +112,7 @@ Testing rzlamrr/dvstlab:lite...
   Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Low severity vulnerability found in gmp/libgmp10
-  Description: CVE-2021-43618
+  Description: Integer Overflow or Wraparound
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GMP-1921284
   Introduced through: gmp/libgmp10@2:6.2.0+dfsg-4, apt@2.0.6, gcc-defaults/gcc@4:9.3.0-1ubuntu2, curl@7.68.0-1ubuntu2.7
   From: gmp/libgmp10@2:6.2.0+dfsg-4
@@ -268,6 +268,17 @@ Testing rzlamrr/dvstlab:lite...
   From: wget@1.20.3-1ubuntu2
   Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
+✗ Medium severity vulnerability found in systemd/libsystemd0
+  Description: CVE-2021-3997
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SYSTEMD-2332040
+  Introduced through: systemd/libsystemd0@245.4-4ubuntu3.14, apt@2.0.6, procps/libprocps8@2:3.3.16-1ubuntu2.3, util-linux/bsdutils@1:2.34-0.1ubuntu9.1, openssh/ssh@1:8.2p1-4ubuntu0.4, util-linux/mount@2.34-0.1ubuntu9.1, systemd/libudev1@245.4-4ubuntu3.14
+  From: systemd/libsystemd0@245.4-4ubuntu3.14
+  From: apt@2.0.6 > systemd/libsystemd0@245.4-4ubuntu3.14
+  From: procps/libprocps8@2:3.3.16-1ubuntu2.3 > systemd/libsystemd0@245.4-4ubuntu3.14
+  and 8 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+  Fixed in: 245.4-4ubuntu3.15
+
 ✗ Medium severity vulnerability found in sqlite3/libsqlite3-0
   Description: Out-of-bounds Read
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-581593
@@ -278,7 +289,7 @@ Testing rzlamrr/dvstlab:lite...
   Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Medium severity vulnerability found in perl/perl-modules-5.30
-  Description: CVE-2020-16156
+  Description: Improper Verification of Cryptographic Signature
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PERL-1930907
   Introduced through: git@1:2.25.1-1ubuntu3.2, meta-common-packages@meta
   From: git@1:2.25.1-1ubuntu3.2 > perl@5.30.0-9ubuntu0.2 > perl/perl-modules-5.30@5.30.0-9ubuntu0.2
@@ -345,16 +356,16 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 36 issues.
+Tested 221 dependencies for known issues, found 37 issues.
 
 Base Image    Vulnerabilities  Severity
-ubuntu:20.04  19               0 critical, 0 high, 3 medium, 16 low
+ubuntu:20.04  20               0 critical, 0 high, 4 medium, 16 low
 
 Recommendations for base image upgrade:
 
 Major upgrades
 Base Image              Vulnerabilities  Severity
-ubuntu:impish-20211015  13               0 critical, 0 high, 2 medium, 11 low
+ubuntu:impish-20211015  14               0 critical, 0 high, 3 medium, 11 low
 
 
 -------------------------------------------------------
