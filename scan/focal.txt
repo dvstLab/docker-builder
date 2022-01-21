@@ -642,6 +642,14 @@ Testing rzlamrr/dvstlab:focal...
   and 8 more...
   Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
 
+✗ Medium severity vulnerability found in maven/libmaven3-core-java
+  Description: Origin Validation Error
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-MAVEN-1278840
+  Introduced through: maven@3.6.3-1
+  From: maven@3.6.3-1 > maven/libmaven3-core-java@3.6.3-1
+  From: maven@3.6.3-1
+  Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
+
 ✗ Medium severity vulnerability found in libarchive/libarchive13
   Description: Use After Free
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBARCHIVE-1325495
@@ -729,6 +737,16 @@ Testing rzlamrr/dvstlab:focal...
   and 10 more...
   Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
 
+✗ Medium severity vulnerability found in gdk-pixbuf/libgdk-pixbuf2.0-0
+  Description: CVE-2021-44648
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GDKPIXBUF-2339782
+  Introduced through: openjdk-8/openjdk-8-jdk@8u312-b07-0ubuntu1~20.04
+  From: openjdk-8/openjdk-8-jdk@8u312-b07-0ubuntu1~20.04 > openjdk-8/openjdk-8-jre@8u312-b07-0ubuntu1~20.04 > gtk+2.0/libgtk2.0-0@2.24.32-4ubuntu4 > gdk-pixbuf/libgdk-pixbuf2.0-0@2.40.0+dfsg-3ubuntu0.2
+  From: openjdk-8/openjdk-8-jdk@8u312-b07-0ubuntu1~20.04 > openjdk-8/openjdk-8-jre@8u312-b07-0ubuntu1~20.04 > gtk+2.0/libgtk2.0-0@2.24.32-4ubuntu4 > adwaita-icon-theme@3.36.1-2ubuntu0.20.04.2 > gtk+3.0/gtk-update-icon-cache@3.24.20-0ubuntu1 > gdk-pixbuf/libgdk-pixbuf2.0-0@2.40.0+dfsg-3ubuntu0.2
+  From: openjdk-8/openjdk-8-jdk@8u312-b07-0ubuntu1~20.04 > openjdk-8/openjdk-8-jre@8u312-b07-0ubuntu1~20.04 > gtk+2.0/libgtk2.0-0@2.24.32-4ubuntu4 > adwaita-icon-theme@3.36.1-2ubuntu0.20.04.2 > librsvg/librsvg2-common@2.48.9-1ubuntu0.20.04.1 > gdk-pixbuf/libgdk-pixbuf2.0-0@2.40.0+dfsg-3ubuntu0.2
+  and 2 more...
+  Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
+
 ✗ Medium severity vulnerability found in gcc-defaults/cpp
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GCCDEFAULTS-584255
@@ -759,6 +777,13 @@ Testing rzlamrr/dvstlab:focal...
   and 3 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
+✗ Medium severity vulnerability found in cryptsetup/libcryptsetup12
+  Description: CVE-2021-4122
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-CRYPTSETUP-2341212
+  Introduced through: software-properties/software-properties-common@0.99.9.8
+  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > systemd/libpam-systemd@245.4-4ubuntu3.15 > systemd@245.4-4ubuntu3.15 > cryptsetup/libcryptsetup12@2:2.2.2-3ubuntu2.3
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
 ✗ Medium severity vulnerability found in axel
   Description: Improper Certificate Validation
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-AXEL-609615
@@ -783,7 +808,7 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 738 dependencies for known issues, found 85 issues.
+Tested 738 dependencies for known issues, found 88 issues.
 
 Base Image    Vulnerabilities  Severity
 ubuntu:20.04  20               0 critical, 0 high, 4 medium, 16 low
