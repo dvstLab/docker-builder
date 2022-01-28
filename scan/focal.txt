@@ -1,6 +1,13 @@
 
 Testing rzlamrr/dvstlab:focal...
 
+✗ Low severity vulnerability found in zip
+  Description: Use After Free
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-ZIP-1192441
+  Introduced through: zip@3.0-11build1
+  From: zip@3.0-11build1
+  Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
+
 ✗ Low severity vulnerability found in xorg/x11-common
   Description: Link Following
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-XORG-576651
@@ -101,9 +108,9 @@ Testing rzlamrr/dvstlab:focal...
   Description: Improper Encoding or Escaping of Output
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-POLICYKIT1-582575
   Introduced through: software-properties/software-properties-common@0.99.9.8
-  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1.1
-  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1.1
-  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > policykit-1/libpolkit-agent-1-0@0.105-26ubuntu1.1 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1.1
+  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1.2
+  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.2 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1.2
+  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.2 > policykit-1/libpolkit-agent-1-0@0.105-26ubuntu1.2 > policykit-1/libpolkit-gobject-1-0@0.105-26ubuntu1.2
   and 2 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -437,6 +444,16 @@ Testing rzlamrr/dvstlab:focal...
   Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
 
 ✗ Low severity vulnerability found in glibc/libc6-dev-i386
+  Description: Integer Overflow or Wraparound
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1315365
+  Introduced through: ncurses/lib32ncurses-dev@6.2-0ubuntu2, zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2, gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2, glibc/libc-bin@2.31-0ubuntu9.2, lsb/lsb-core@11.1.0ubuntu2, meta-common-packages@meta
+  From: ncurses/lib32ncurses-dev@6.2-0ubuntu2 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  From: zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  From: gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2 > gcc-defaults/gcc-multilib@4:9.3.0-1ubuntu2 > gcc-9/gcc-9-multilib@9.3.0-17ubuntu1~20.04 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  and 10 more...
+  Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
+
+✗ Low severity vulnerability found in glibc/libc6-dev-i386
   Description: Improper Input Validation
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-576349
   Introduced through: ncurses/lib32ncurses-dev@6.2-0ubuntu2, zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2, gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2, glibc/libc-bin@2.31-0ubuntu9.2, lsb/lsb-core@11.1.0ubuntu2, meta-common-packages@meta
@@ -491,8 +508,8 @@ Testing rzlamrr/dvstlab:focal...
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-DBUS-1131328
   Introduced through: meta-common-packages@meta, software-properties/software-properties-common@0.99.9.8
   From: meta-common-packages@meta > dbus/libdbus-1-3@1.12.16-2ubuntu2.1
-  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > dbus@1.12.16-2ubuntu2.1
-  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > systemd/libpam-systemd@245.4-4ubuntu3.15 > dbus@1.12.16-2ubuntu2.1
+  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.2 > dbus@1.12.16-2ubuntu2.1
+  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.2 > systemd/libpam-systemd@245.4-4ubuntu3.15 > dbus@1.12.16-2ubuntu2.1
   and 2 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
@@ -718,16 +735,6 @@ Testing rzlamrr/dvstlab:focal...
   Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
 
 ✗ Medium severity vulnerability found in glibc/libc6-dev-i386
-  Description: Integer Overflow or Wraparound
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1315365
-  Introduced through: ncurses/lib32ncurses-dev@6.2-0ubuntu2, zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2, gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2, glibc/libc-bin@2.31-0ubuntu9.2, lsb/lsb-core@11.1.0ubuntu2, meta-common-packages@meta
-  From: ncurses/lib32ncurses-dev@6.2-0ubuntu2 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
-  From: zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
-  From: gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2 > gcc-defaults/gcc-multilib@4:9.3.0-1ubuntu2 > gcc-9/gcc-9-multilib@9.3.0-17ubuntu1~20.04 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
-  and 10 more...
-  Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
-
-✗ Medium severity vulnerability found in glibc/libc6-dev-i386
   Description: NULL Pointer Dereference
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1564900
   Introduced through: ncurses/lib32ncurses-dev@6.2-0ubuntu2, zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2, gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2, glibc/libc-bin@2.31-0ubuntu9.2, lsb/lsb-core@11.1.0ubuntu2, meta-common-packages@meta
@@ -737,8 +744,48 @@ Testing rzlamrr/dvstlab:focal...
   and 10 more...
   Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
 
+✗ Medium severity vulnerability found in glibc/libc6-dev-i386
+  Description: Buffer Overflow
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-2356799
+  Introduced through: ncurses/lib32ncurses-dev@6.2-0ubuntu2, zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2, gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2, glibc/libc-bin@2.31-0ubuntu9.2, lsb/lsb-core@11.1.0ubuntu2, meta-common-packages@meta
+  From: ncurses/lib32ncurses-dev@6.2-0ubuntu2 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  From: zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  From: gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2 > gcc-defaults/gcc-multilib@4:9.3.0-1ubuntu2 > gcc-9/gcc-9-multilib@9.3.0-17ubuntu1~20.04 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  and 10 more...
+  Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
+
+✗ Medium severity vulnerability found in glibc/libc6-dev-i386
+  Description: Buffer Overflow
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-2356852
+  Introduced through: ncurses/lib32ncurses-dev@6.2-0ubuntu2, zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2, gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2, glibc/libc-bin@2.31-0ubuntu9.2, lsb/lsb-core@11.1.0ubuntu2, meta-common-packages@meta
+  From: ncurses/lib32ncurses-dev@6.2-0ubuntu2 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  From: zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  From: gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2 > gcc-defaults/gcc-multilib@4:9.3.0-1ubuntu2 > gcc-9/gcc-9-multilib@9.3.0-17ubuntu1~20.04 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  and 10 more...
+  Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
+
+✗ Medium severity vulnerability found in glibc/libc6-dev-i386
+  Description: CVE-2021-3999
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-2359259
+  Introduced through: ncurses/lib32ncurses-dev@6.2-0ubuntu2, zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2, gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2, glibc/libc-bin@2.31-0ubuntu9.2, lsb/lsb-core@11.1.0ubuntu2, meta-common-packages@meta
+  From: ncurses/lib32ncurses-dev@6.2-0ubuntu2 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  From: zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  From: gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2 > gcc-defaults/gcc-multilib@4:9.3.0-1ubuntu2 > gcc-9/gcc-9-multilib@9.3.0-17ubuntu1~20.04 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  and 10 more...
+  Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
+
+✗ Medium severity vulnerability found in glibc/libc6-dev-i386
+  Description: CVE-2021-3998
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-2359270
+  Introduced through: ncurses/lib32ncurses-dev@6.2-0ubuntu2, zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2, gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2, glibc/libc-bin@2.31-0ubuntu9.2, lsb/lsb-core@11.1.0ubuntu2, meta-common-packages@meta
+  From: ncurses/lib32ncurses-dev@6.2-0ubuntu2 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  From: zlib/lib32z1-dev@1:1.2.11.dfsg-2ubuntu1.2 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  From: gcc-defaults/g++-multilib@4:9.3.0-1ubuntu2 > gcc-defaults/gcc-multilib@4:9.3.0-1ubuntu2 > gcc-9/gcc-9-multilib@9.3.0-17ubuntu1~20.04 > glibc/libc6-dev-i386@2.31-0ubuntu9.2
+  and 10 more...
+  Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
+
 ✗ Medium severity vulnerability found in gdk-pixbuf/libgdk-pixbuf2.0-0
-  Description: CVE-2021-44648
+  Description: Out-of-bounds Write
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GDKPIXBUF-2339782
   Introduced through: openjdk-8/openjdk-8-jdk@8u312-b07-0ubuntu1~20.04
   From: openjdk-8/openjdk-8-jdk@8u312-b07-0ubuntu1~20.04 > openjdk-8/openjdk-8-jre@8u312-b07-0ubuntu1~20.04 > gtk+2.0/libgtk2.0-0@2.24.32-4ubuntu4 > gdk-pixbuf/libgdk-pixbuf2.0-0@2.40.0+dfsg-3ubuntu0.2
@@ -777,11 +824,21 @@ Testing rzlamrr/dvstlab:focal...
   and 3 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
+✗ Medium severity vulnerability found in expat
+  Description: CVE-2022-23852
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-EXPAT-2359512
+  Introduced through: expat@2.2.9-1build1, meta-common-packages@meta, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4
+  From: expat@2.2.9-1build1
+  From: meta-common-packages@meta > expat/libexpat1@2.2.9-1build1
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3.8/python3.8-dev@3.8.10-0ubuntu1~20.04.2 > expat/libexpat1-dev@2.2.9-1build1
+  and 3 more...
+  Image layer: 'apt-get install -y -q --no-install-recommends apt-utils apt-transport-https python3-apt lsb-core lsb-security ca-certificates systemd udev git curl wget wput axel binutils coreutils bsdmainutils util-linux patchutils libc6-dev ssh openssl libssl-dev sshpass gnupg2 gpg android-sdk-platform-tools squashfs-tools openjdk-8-jdk ca-certificates-java maven nodejs python-all-dev python3-dev python3-requests zip unzip lzip zlib1g-dev xzdec xz-utils pixz p7zip-full p7zip-rar zstd libzstd-dev lib32z1-dev '^liblz4-.*' '^liblzma.*' '^lzma.*' lzop build-essential gcc gcc-multilib g++ g++-multilib clang lld cmake automake autoconf libxml2 libxml2-utils xsltproc expat re2c ncurses-bin libncurses5-dev lib32ncurses5-dev bc libreadline-gplv2-dev libsdl1.2-dev libtinfo5 file gawk xterm rename tree schedtool software-properties-common dos2unix jq flex bison gperf exfat-utils exfat-fuse libb2-dev pngcrush imagemagick advancecomp python-is-python2 ninja-build libcrypt-dev'
+
 ✗ Medium severity vulnerability found in cryptsetup/libcryptsetup12
   Description: CVE-2021-4122
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-CRYPTSETUP-2341212
   Introduced through: software-properties/software-properties-common@0.99.9.8
-  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.1 > systemd/libpam-systemd@245.4-4ubuntu3.15 > systemd@245.4-4ubuntu3.15 > cryptsetup/libcryptsetup12@2:2.2.2-3ubuntu2.3
+  From: software-properties/software-properties-common@0.99.9.8 > packagekit@1.1.13-2ubuntu1.1 > policykit-1@0.105-26ubuntu1.2 > systemd/libpam-systemd@245.4-4ubuntu3.15 > systemd@245.4-4ubuntu3.15 > cryptsetup/libcryptsetup12@2:2.2.2-3ubuntu2.3
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in axel
@@ -808,16 +865,16 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 738 dependencies for known issues, found 88 issues.
+Tested 738 dependencies for known issues, found 94 issues.
 
 Base Image    Vulnerabilities  Severity
-ubuntu:20.04  20               0 critical, 0 high, 4 medium, 16 low
+ubuntu:20.04  24               0 critical, 0 high, 7 medium, 17 low
 
 Recommendations for base image upgrade:
 
 Major upgrades
 Base Image              Vulnerabilities  Severity
-ubuntu:impish-20211015  14               0 critical, 0 high, 3 medium, 11 low
+ubuntu:impish-20211015  14               0 critical, 0 high, 6 medium, 8 low
 
 
 -------------------------------------------------------

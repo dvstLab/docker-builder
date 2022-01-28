@@ -1,6 +1,13 @@
 
 Testing rzlamrr/dvstlab:lite...
 
+✗ Low severity vulnerability found in zip
+  Description: Use After Free
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-ZIP-1192441
+  Introduced through: zip@3.0-11build1
+  From: zip@3.0-11build1
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
+
 ✗ Low severity vulnerability found in sqlite3/libsqlite3-0
   Description: CVE-2020-9991
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-1070680
@@ -182,6 +189,16 @@ Testing rzlamrr/dvstlab:lite...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in glibc/libc-bin
+  Description: Integer Overflow or Wraparound
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1315365
+  Introduced through: glibc/libc-bin@2.31-0ubuntu9.2, glibc/libc6-dev@2.31-0ubuntu9.2, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4, meta-common-packages@meta
+  From: glibc/libc-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2
+  and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Low severity vulnerability found in glibc/libc-bin
   Description: Improper Input Validation
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-576349
   Introduced through: glibc/libc-bin@2.31-0ubuntu9.2, glibc/libc6-dev@2.31-0ubuntu9.2, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4, meta-common-packages@meta
@@ -309,8 +326,8 @@ Testing rzlamrr/dvstlab:lite...
   Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Medium severity vulnerability found in glibc/libc-bin
-  Description: Integer Overflow or Wraparound
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1315365
+  Description: NULL Pointer Dereference
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1564900
   Introduced through: glibc/libc-bin@2.31-0ubuntu9.2, glibc/libc6-dev@2.31-0ubuntu9.2, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4, meta-common-packages@meta
   From: glibc/libc-bin@2.31-0ubuntu9.2
   From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
@@ -319,8 +336,38 @@ Testing rzlamrr/dvstlab:lite...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in glibc/libc-bin
-  Description: NULL Pointer Dereference
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-1564900
+  Description: Buffer Overflow
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-2356799
+  Introduced through: glibc/libc-bin@2.31-0ubuntu9.2, glibc/libc6-dev@2.31-0ubuntu9.2, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4, meta-common-packages@meta
+  From: glibc/libc-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2
+  and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Medium severity vulnerability found in glibc/libc-bin
+  Description: Buffer Overflow
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-2356852
+  Introduced through: glibc/libc-bin@2.31-0ubuntu9.2, glibc/libc6-dev@2.31-0ubuntu9.2, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4, meta-common-packages@meta
+  From: glibc/libc-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2
+  and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Medium severity vulnerability found in glibc/libc-bin
+  Description: CVE-2021-3999
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-2359259
+  Introduced through: glibc/libc-bin@2.31-0ubuntu9.2, glibc/libc6-dev@2.31-0ubuntu9.2, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4, meta-common-packages@meta
+  From: glibc/libc-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
+  From: glibc/libc6-dev@2.31-0ubuntu9.2
+  and 3 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Medium severity vulnerability found in glibc/libc-bin
+  Description: CVE-2021-3998
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-2359270
   Introduced through: glibc/libc-bin@2.31-0ubuntu9.2, glibc/libc6-dev@2.31-0ubuntu9.2, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4, meta-common-packages@meta
   From: glibc/libc-bin@2.31-0ubuntu9.2
   From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
@@ -346,6 +393,16 @@ Testing rzlamrr/dvstlab:lite...
   and 6 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
+✗ Medium severity vulnerability found in expat/libexpat1
+  Description: CVE-2022-23852
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-EXPAT-2359512
+  Introduced through: git@1:2.25.1-1ubuntu3.2, python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2
+  From: git@1:2.25.1-1ubuntu3.2 > expat/libexpat1@2.2.9-1build1
+  From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > expat/libexpat1@2.2.9-1build1
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/libpython3-dev@3.8.2-0ubuntu2 > python3.8/libpython3.8-dev@3.8.10-0ubuntu1~20.04.2 > python3.8/libpython3.8@3.8.10-0ubuntu1~20.04.2 > expat/libexpat1@2.2.9-1build1
+  and 6 more...
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
+
 
 
 Organization:      rzlamrr
@@ -356,16 +413,16 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 37 issues.
+Tested 221 dependencies for known issues, found 43 issues.
 
 Base Image    Vulnerabilities  Severity
-ubuntu:20.04  20               0 critical, 0 high, 4 medium, 16 low
+ubuntu:20.04  24               0 critical, 0 high, 7 medium, 17 low
 
 Recommendations for base image upgrade:
 
 Major upgrades
 Base Image              Vulnerabilities  Severity
-ubuntu:impish-20211015  14               0 critical, 0 high, 3 medium, 11 low
+ubuntu:impish-20211015  14               0 critical, 0 high, 6 medium, 8 low
 
 
 -------------------------------------------------------
