@@ -8,6 +8,16 @@ Testing rzlamrr/dvstlab:lite...
   From: zip@3.0-11build1
   Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
+✗ Low severity vulnerability found in util-linux/libblkid1
+  Description: Integer Overflow or Wraparound
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-UTILLINUX-1534917
+  Introduced through: util-linux/libblkid1@2.34-0.1ubuntu9.1, e2fsprogs@1.45.5-2ubuntu1, util-linux/mount@2.34-0.1ubuntu9.1, util-linux/fdisk@2.34-0.1ubuntu9.1, util-linux/libuuid1@2.34-0.1ubuntu9.1, wget@1.20.3-1ubuntu2, python3-defaults/python3-dev@3.8.2-0ubuntu2, util-linux@2.34-0.1ubuntu9.1, sysvinit/sysvinit-utils@2.96-2.1ubuntu1, util-linux/bsdutils@1:2.34-0.1ubuntu9.1, util-linux/libfdisk1@2.34-0.1ubuntu9.1, util-linux/libmount1@2.34-0.1ubuntu9.1, util-linux/libsmartcols1@2.34-0.1ubuntu9.1
+  From: util-linux/libblkid1@2.34-0.1ubuntu9.1
+  From: e2fsprogs@1.45.5-2ubuntu1 > util-linux/libblkid1@2.34-0.1ubuntu9.1
+  From: util-linux/mount@2.34-0.1ubuntu9.1 > util-linux/libblkid1@2.34-0.1ubuntu9.1
+  and 25 more...
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
+
 ✗ Low severity vulnerability found in sqlite3/libsqlite3-0
   Description: CVE-2020-9991
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-1070680
@@ -20,6 +30,15 @@ Testing rzlamrr/dvstlab:lite...
 ✗ Low severity vulnerability found in sqlite3/libsqlite3-0
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-1070691
+  Introduced through: python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2, curl@7.68.0-1ubuntu2.7
+  From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.2 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
+
+✗ Low severity vulnerability found in sqlite3/libsqlite3-0
+  Description: Out-of-bounds Read
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SQLITE3-1570090
   Introduced through: python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2, curl@7.68.0-1ubuntu2.7
   From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.2 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
@@ -96,6 +115,38 @@ Testing rzlamrr/dvstlab:lite...
   Introduced through: libtasn1-6@4.16.0-2, apt@2.0.6
   From: libtasn1-6@4.16.0-2
   From: apt@2.0.6 > gnutls28/libgnutls30@3.6.13-2ubuntu1.6 > libtasn1-6@4.16.0-2
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Low severity vulnerability found in libsepol/libsepol1
+  Description: Use After Free
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBSEPOL-1315883
+  Introduced through: libsepol/libsepol1@3.0-1, adduser@3.118ubuntu2
+  From: libsepol/libsepol1@3.0-1
+  From: adduser@3.118ubuntu2 > shadow/passwd@1:4.8.1-1ubuntu5.20.04.1 > libsemanage/libsemanage1@3.0-1build2 > libsepol/libsepol1@3.0-1
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Low severity vulnerability found in libsepol/libsepol1
+  Description: Out-of-bounds Read
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBSEPOL-1315888
+  Introduced through: libsepol/libsepol1@3.0-1, adduser@3.118ubuntu2
+  From: libsepol/libsepol1@3.0-1
+  From: adduser@3.118ubuntu2 > shadow/passwd@1:4.8.1-1ubuntu5.20.04.1 > libsemanage/libsemanage1@3.0-1build2 > libsepol/libsepol1@3.0-1
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Low severity vulnerability found in libsepol/libsepol1
+  Description: Use After Free
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBSEPOL-1315894
+  Introduced through: libsepol/libsepol1@3.0-1, adduser@3.118ubuntu2
+  From: libsepol/libsepol1@3.0-1
+  From: adduser@3.118ubuntu2 > shadow/passwd@1:4.8.1-1ubuntu5.20.04.1 > libsemanage/libsemanage1@3.0-1build2 > libsepol/libsepol1@3.0-1
+  Image layer: Introduced by your base image (ubuntu:20.04)
+
+✗ Low severity vulnerability found in libsepol/libsepol1
+  Description: Use After Free
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-LIBSEPOL-1315896
+  Introduced through: libsepol/libsepol1@3.0-1, adduser@3.118ubuntu2
+  From: libsepol/libsepol1@3.0-1
+  From: adduser@3.118ubuntu2 > shadow/passwd@1:4.8.1-1ubuntu5.20.04.1 > libsemanage/libsemanage1@3.0-1build2 > libsepol/libsepol1@3.0-1
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Low severity vulnerability found in krb5/libkrb5support0
@@ -285,16 +336,25 @@ Testing rzlamrr/dvstlab:lite...
   From: wget@1.20.3-1ubuntu2
   Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
-✗ Medium severity vulnerability found in systemd/libsystemd0
-  Description: CVE-2021-3997
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-SYSTEMD-2332040
-  Introduced through: systemd/libsystemd0@245.4-4ubuntu3.14, apt@2.0.6, procps/libprocps8@2:3.3.16-1ubuntu2.3, util-linux/bsdutils@1:2.34-0.1ubuntu9.1, openssh/ssh@1:8.2p1-4ubuntu0.4, util-linux/mount@2.34-0.1ubuntu9.1, systemd/libudev1@245.4-4ubuntu3.14
-  From: systemd/libsystemd0@245.4-4ubuntu3.14
-  From: apt@2.0.6 > systemd/libsystemd0@245.4-4ubuntu3.14
-  From: procps/libprocps8@2:3.3.16-1ubuntu2.3 > systemd/libsystemd0@245.4-4ubuntu3.14
-  and 8 more...
-  Image layer: Introduced by your base image (ubuntu:20.04)
-  Fixed in: 245.4-4ubuntu3.15
+✗ Medium severity vulnerability found in util-linux/libblkid1
+  Description: CVE-2021-3996
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-UTILLINUX-2387723
+  Introduced through: util-linux/libblkid1@2.34-0.1ubuntu9.1, e2fsprogs@1.45.5-2ubuntu1, util-linux/mount@2.34-0.1ubuntu9.1, util-linux/fdisk@2.34-0.1ubuntu9.1, util-linux/libuuid1@2.34-0.1ubuntu9.1, wget@1.20.3-1ubuntu2, python3-defaults/python3-dev@3.8.2-0ubuntu2, util-linux@2.34-0.1ubuntu9.1, sysvinit/sysvinit-utils@2.96-2.1ubuntu1, util-linux/bsdutils@1:2.34-0.1ubuntu9.1, util-linux/libfdisk1@2.34-0.1ubuntu9.1, util-linux/libmount1@2.34-0.1ubuntu9.1, util-linux/libsmartcols1@2.34-0.1ubuntu9.1
+  From: util-linux/libblkid1@2.34-0.1ubuntu9.1
+  From: e2fsprogs@1.45.5-2ubuntu1 > util-linux/libblkid1@2.34-0.1ubuntu9.1
+  From: util-linux/mount@2.34-0.1ubuntu9.1 > util-linux/libblkid1@2.34-0.1ubuntu9.1
+  and 25 more...
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
+
+✗ Medium severity vulnerability found in util-linux/libblkid1
+  Description: CVE-2021-3995
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-UTILLINUX-2387728
+  Introduced through: util-linux/libblkid1@2.34-0.1ubuntu9.1, e2fsprogs@1.45.5-2ubuntu1, util-linux/mount@2.34-0.1ubuntu9.1, util-linux/fdisk@2.34-0.1ubuntu9.1, util-linux/libuuid1@2.34-0.1ubuntu9.1, wget@1.20.3-1ubuntu2, python3-defaults/python3-dev@3.8.2-0ubuntu2, util-linux@2.34-0.1ubuntu9.1, sysvinit/sysvinit-utils@2.96-2.1ubuntu1, util-linux/bsdutils@1:2.34-0.1ubuntu9.1, util-linux/libfdisk1@2.34-0.1ubuntu9.1, util-linux/libmount1@2.34-0.1ubuntu9.1, util-linux/libsmartcols1@2.34-0.1ubuntu9.1
+  From: util-linux/libblkid1@2.34-0.1ubuntu9.1
+  From: e2fsprogs@1.45.5-2ubuntu1 > util-linux/libblkid1@2.34-0.1ubuntu9.1
+  From: util-linux/mount@2.34-0.1ubuntu9.1 > util-linux/libblkid1@2.34-0.1ubuntu9.1
+  and 25 more...
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
 
 ✗ Medium severity vulnerability found in sqlite3/libsqlite3-0
   Description: Out-of-bounds Read
@@ -304,6 +364,16 @@ Testing rzlamrr/dvstlab:lite...
   From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.2 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   From: curl@7.68.0-1ubuntu2.7 > curl/libcurl4@7.68.0-1ubuntu2.7 > openldap/libldap-2.4-2@2.4.49+dfsg-2ubuntu1.8 > heimdal/libgssapi3-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libheimntlm0-heimdal@7.7.0+dfsg-1ubuntu1 > heimdal/libkrb5-26-heimdal@7.7.0+dfsg-1ubuntu1 > sqlite3/libsqlite3-0@3.31.1-4ubuntu0.2
   Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
+
+✗ Medium severity vulnerability found in python3.8/libpython3.8-stdlib
+  Description: CVE-2021-4189
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-PYTHON38-2329898
+  Introduced through: python3-defaults/python3-dev@3.8.2-0ubuntu2
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/libpython3-dev@3.8.2-0ubuntu2 > python3.8/libpython3.8-dev@3.8.10-0ubuntu1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.2
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3-defaults/libpython3-stdlib@3.8.2-0ubuntu2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.2
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/python3@3.8.2-0ubuntu2 > python3.8@3.8.10-0ubuntu1~20.04.2 > python3.8/libpython3.8-stdlib@3.8.10-0ubuntu1~20.04.2
+  and 12 more...
+  Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in perl/perl-modules-5.30
   Description: Improper Verification of Cryptographic Signature
@@ -365,16 +435,6 @@ Testing rzlamrr/dvstlab:lite...
   and 3 more...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
-✗ Medium severity vulnerability found in glibc/libc-bin
-  Description: CVE-2021-3998
-  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GLIBC-2359270
-  Introduced through: glibc/libc-bin@2.31-0ubuntu9.2, glibc/libc6-dev@2.31-0ubuntu9.2, python3-defaults/python3-dev@3.8.2-0ubuntu2, python-defaults/python-all-dev@2.7.17-2ubuntu4, meta-common-packages@meta
-  From: glibc/libc-bin@2.31-0ubuntu9.2
-  From: glibc/libc6-dev@2.31-0ubuntu9.2 > glibc/libc-dev-bin@2.31-0ubuntu9.2
-  From: glibc/libc6-dev@2.31-0ubuntu9.2
-  and 3 more...
-  Image layer: Introduced by your base image (ubuntu:20.04)
-
 ✗ Medium severity vulnerability found in gcc-defaults/cpp
   Description: Information Exposure
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-GCCDEFAULTS-584255
@@ -394,8 +454,18 @@ Testing rzlamrr/dvstlab:lite...
   Image layer: Introduced by your base image (ubuntu:20.04)
 
 ✗ Medium severity vulnerability found in expat/libexpat1
-  Description: CVE-2022-23852
+  Description: Integer Overflow or Wraparound
   Info: https://snyk.io/vuln/SNYK-UBUNTU2004-EXPAT-2359512
+  Introduced through: git@1:2.25.1-1ubuntu3.2, python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2
+  From: git@1:2.25.1-1ubuntu3.2 > expat/libexpat1@2.2.9-1build1
+  From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > expat/libexpat1@2.2.9-1build1
+  From: python3-defaults/python3-dev@3.8.2-0ubuntu2 > python3-defaults/libpython3-dev@3.8.2-0ubuntu2 > python3.8/libpython3.8-dev@3.8.10-0ubuntu1~20.04.2 > python3.8/libpython3.8@3.8.10-0ubuntu1~20.04.2 > expat/libexpat1@2.2.9-1build1
+  and 6 more...
+  Image layer: 'apt-get install --no-install-recommends -y bc bison ca-certificates curl gcc git jq libxml2 libtinfo5 libc6-dev libssl-dev libstdc++6 make openssl python-all-dev python3-dev ssh tzdata wget zip zstd'
+
+✗ Medium severity vulnerability found in expat/libexpat1
+  Description: Integer Overflow or Wraparound
+  Info: https://snyk.io/vuln/SNYK-UBUNTU2004-EXPAT-2387546
   Introduced through: git@1:2.25.1-1ubuntu3.2, python-defaults/python-all-dev@2.7.17-2ubuntu4, python3-defaults/python3-dev@3.8.2-0ubuntu2
   From: git@1:2.25.1-1ubuntu3.2 > expat/libexpat1@2.2.9-1build1
   From: python-defaults/python-all-dev@2.7.17-2ubuntu4 > python-defaults/python2@2.7.17-2ubuntu4 > python2.7@2.7.18-1~20.04.1 > python2.7/libpython2.7-stdlib@2.7.18-1~20.04.1 > expat/libexpat1@2.2.9-1build1
@@ -413,16 +483,16 @@ Platform:          linux/amd64
 Base image:        ubuntu:20.04
 Licenses:          enabled
 
-Tested 221 dependencies for known issues, found 43 issues.
+Tested 221 dependencies for known issues, found 51 issues.
 
 Base Image    Vulnerabilities  Severity
-ubuntu:20.04  24               0 critical, 0 high, 7 medium, 17 low
+ubuntu:20.04  29               0 critical, 0 high, 7 medium, 22 low
 
 Recommendations for base image upgrade:
 
 Major upgrades
-Base Image              Vulnerabilities  Severity
-ubuntu:impish-20211015  14               0 critical, 0 high, 6 medium, 8 low
+Base Image      Vulnerabilities  Severity
+ubuntu:rolling  19               0 critical, 0 high, 7 medium, 12 low
 
 
 -------------------------------------------------------
