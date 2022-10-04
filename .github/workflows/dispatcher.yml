@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.inputs.BUILD_TARGET == 'focal' }}
     steps:
-    - uses: actions/checkout@v2.3.4
+    - uses: actions/checkout@v3.1.0
     - name: Docker Login
       uses: docker/login-action@v1.10.0
       with:
@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.inputs.BUILD_TARGET == 'lite' }}
     steps:
-    - uses: actions/checkout@v2.3.4
+    - uses: actions/checkout@v3.1.0
     - name: Docker Login
       uses: docker/login-action@v1.10.0
       with:
@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.inputs.BUILD_TARGET == 'arch' }}
     steps:
-    - uses: actions/checkout@v2.3.4
+    - uses: actions/checkout@v3.1.0
     - name: Docker Login
       uses: docker/login-action@v1.10.0
       with:
@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.inputs.BUILD_TARGET == 'all' }}
     steps:
-    - uses: actions/checkout@v2.3.4
+    - uses: actions/checkout@v3.1.0
     - name: Docker Login
       uses: docker/login-action@v1.10.0
       with:
@@ -65,7 +65,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.inputs.BUILD_TARGET == 'scan' }}
     steps:
-    - uses: actions/checkout@v2.3.4
+    - uses: actions/checkout@v3.1.0
     - uses: docker/login-action@v1.10.0
       with:
         username: rzlamrr
